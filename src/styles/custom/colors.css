@@ -1,0 +1,11 @@
+/*
+ * COLORS: colores base usados en la aplicación
+ */
+:root {
+  --white: #fff;
+  --black: #000;
+  --main-color: #5a2775;
+  --secondary-color: #f195bf;
+  --background-color: #fcfefe;
+  --background-footer: #faedf4;
+}
