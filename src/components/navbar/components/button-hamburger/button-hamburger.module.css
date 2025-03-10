@@ -1,0 +1,45 @@
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.wrapperButton {
+  display: flex;
+  flex-direction: column;
+  width: 2.25rem;
+  height: 1.875rem;
+  border: 0;
+  gap: 6px;
+  background-color: transparent;
+
+  & > div {
+    background-color: var(--main-color);
+    height: 0.3125rem;
+    width: 100%;
+    border-radius: var(--rounded-lg);
+    transition: all 500ms;
+  }
+
+  @media (width >= 48rem) {
+    display: none;
+  }
+}
+
+.wrapperButton[aria-expanded="true"] div:first-child {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.wrapperButton[aria-expanded="true"] div:nth-child(2) {
+  opacity: 0;
+}
+
+.wrapperButton[aria-expanded="true"] div:last-child {
+  transform: translate(0, -11px) rotate(45deg);
+}

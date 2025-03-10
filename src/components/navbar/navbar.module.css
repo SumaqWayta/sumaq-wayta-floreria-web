@@ -1,0 +1,32 @@
+.wrapperNavbar {
+  display: flex;
+  justify-content: center;
+  background: var(--background-color);
+  border-bottom: 8px solid var(--main-color);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(100% - 20px, 1200px);
+  z-index: 4;
+}
+
+.navbar {
+  display: none;
+  gap: 2rem;
+  padding-right: 1rem;
+
+  a {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    color: var(--main-color);
+  }
+}
+
+@media (min-width: 48rem) {
+  .navbar {
+    display: flex;
+  }
+}
