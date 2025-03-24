@@ -2,42 +2,42 @@
   {
     "id": 1,
     "name": "Ramo",
-    "url": "",
+    "url": "/flowers/bouquets/bouquet-1.svg",
     "content": ["6 Gerberas", "Follaje fino"],
     "price": "59.90"
   },
   {
     "id": 2,
     "name": "Ramo",
-    "url": "",
+    "url": "/flowers/bouquets/bouquet-2.svg ",
     "content": ["30 Rosas", "Follaje fino"],
     "price": "149.90"
   },
   {
     "id": 3,
     "name": "Ramo",
-    "url": "",
+    "url": "/flowers/bouquets/bouquet-3.svg",
     "content": ["6 Rosas", "Lirios", "Imperico", "Follaje fino"],
     "price": "54.90"
   },
   {
     "id": 4,
     "name": "Ramo",
-    "url": "",
+    "url": "/flowers/bouquets/bouquet-4.svg",
     "content": ["6 Rosas", "Follaje fino"],
     "price": "29.90"
   },
   {
     "id": 5,
     "name": "Ramo",
-    "url": "",
+    "url": "/flowers/bouquets/bouquet-5.svg",
     "content": ["12 Rosas", "Multicolor", "Imperico", "Follaje fino"],
     "price": "54.90"
   },
   {
     "id": 6,
     "name": "Ramo",
-    "url": "",
+    "url": "/flowers/bouquets/bouquet-6.svg",
     "content": ["10 Tulipanes", "Follaje fino"],
     "price": "119.90"
   }
