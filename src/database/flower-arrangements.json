@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": [
+      "8 Rosas",
+      "2 Girasoles",
+      "2 Gerberas",
+      "Claveles",
+      "Aleli",
+      "Follaje fino"
+    ],
+    "price": "144.90"
+  },
+  {
+    "id": 2,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": [
+      "6 Rosas",
+      "2 Gerberas",
+      "Astromelias",
+      "Claveles",
+      "Imperico",
+      "Follaje fino"
+    ],
+    "price": "69.90"
+  },
+  {
+    "id": 3,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": [
+      "4 Girasoles",
+      "6 Rosas",
+      "Imperico",
+      "Astromelias",
+      "Follaje fino"
+    ],
+    "price": "69.90"
+  },
+  {
+    "id": 4,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": [
+      "6 Rosas",
+      "4 Girasoles",
+      "Claveles",
+      "Verónica",
+      "Astromelias",
+      "Follaje fino"
+    ],
+    "price": "79.90"
+  },
+  {
+    "id": 5,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": [
+      "14 Rosas",
+      "3 Gerberas",
+      "3 Girasoles",
+      "3 Ginger",
+      "Lirio",
+      "Aleli",
+      "Verónica",
+      "Follaje fino"
+    ],
+    "price": "199.90"
+  },
+  {
+    "id": 6,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": [
+      "6 Rosas",
+      "1 Gerberas",
+      "Astromelias",
+      "Claveles",
+      "Verónica",
+      "Follaje fino"
+    ],
+    "price": "59.90"
+  },
+  {
+    "id": 7,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": ["12 Girasoles", "12 Rosas", "Follaje fino"],
+    "price": "179.90"
+  },
+  {
+    "id": 8,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": ["12 Rosas", "Astromelias", "Verónica", "Follaje fino"],
+    "price": "79.90"
+  },
+  {
+    "id": 9,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": [
+      "24 Rosas",
+      "4 Ginger",
+      "3 Lirios",
+      "3 Pico de loro",
+      "Imperico",
+      "Follaje fino"
+    ],
+    "price": "259.99"
+  },
+  {
+    "id": 10,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": [
+      "12 Rosas",
+      "3 Gerberas",
+      "1 Lirio",
+      "Claveles",
+      "Hortensia",
+      "Iris",
+      "Follaje fino"
+    ],
+    "price": "149.90"
+  },
+  {
+    "id": 11,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": [
+      "12 Rosas",
+      "3 Pico de loro",
+      "2 Gerberas",
+      "1 Lirio",
+      "Hortensia",
+      "Claveles",
+      "Follaje fino"
+    ],
+    "price": "159.90"
+  },
+  {
+    "id": 12,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": ["35 Rosas", "4 Lirios", "Follaje fino"],
+    "price": "244.90"
+  },
+  {
+    "id": 13,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": [
+      "20 Rosas",
+      "4 Ginger",
+      "3 Lirios",
+      "2 Ginger",
+      "Imperico",
+      "Follaje fino"
+    ],
+    "price": "209.90"
+  },
+  {
+    "id": 14,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": [
+      "7 Rosas",
+      "4 Pico de loro",
+      "2 Girasoles",
+      "3 Gerberas",
+      "1 Lirio",
+      "Pata de canguro",
+      "Follaje fino"
+    ],
+    "price": "179.90"
+  },
+  {
+    "id": 15,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": [
+      "18 Rosas",
+      "2 Girasoles",
+      "2 Gerberas",
+      "1 Lirio",
+      "Claveles",
+      "Verónica",
+      "Follaje fino"
+    ],
+    "price": "184.90"
+  },
+  {
+    "id": 16,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": ["24 Rosas", "4 Lirios", "Astromelias", "Follaje fino"],
+    "price": "229.90"
+  },
+  {
+    "id": 17,
+    "name": "Arreglo Floral",
+    "url": "",
+    "content": [
+      "Rosas",
+      "Lirio",
+      "Girasol",
+      "Herbera",
+      "Pico de loro",
+      "Ginger",
+      "Follaje fino"
+    ],
+    "price": "419.90"
+  }
+]

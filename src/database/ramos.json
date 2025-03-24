@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Ramo",
+    "url": "",
+    "content": ["6 Gerberas", "Follaje fino"],
+    "price": "59.90"
+  },
+  {
+    "id": 2,
+    "name": "Ramo",
+    "url": "",
+    "content": ["30 Rosas", "Follaje fino"],
+    "price": "149.90"
+  },
+  {
+    "id": 3,
+    "name": "Ramo",
+    "url": "",
+    "content": ["6 Rosas", "Lirios", "Imperico", "Follaje fino"],
+    "price": "54.90"
+  },
+  {
+    "id": 4,
+    "name": "Ramo",
+    "url": "",
+    "content": ["6 Rosas", "Follaje fino"],
+    "price": "29.90"
+  },
+  {
+    "id": 5,
+    "name": "Ramo",
+    "url": "",
+    "content": ["12 Rosas", "Multicolor", "Imperico", "Follaje fino"],
+    "price": "54.90"
+  },
+  {
+    "id": 6,
+    "name": "Ramo",
+    "url": "",
+    "content": ["10 Tulipanes", "Follaje fino"],
+    "price": "119.90"
+  }
+]
