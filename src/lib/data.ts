@@ -1,3 +1,5 @@
+import BOUQUETS from "@/database/bouquets.json";
+import FLOWER_ARRANGEMENTS from "@/database/flower-arrangements.json";
 import FUNERAL_FLOWERS from "@/database/funeral-flowers.json";
 import TYPES from "@/database/types.json";
 import { FLOWER_TYPE, FuneralFlowerTypes } from "@/types/flower";
@@ -20,4 +22,20 @@ export function getFlowerById(typeId: number, flowerId: number) {
   const flowers = getFuneralFlowerByType(typeId);
   const flower = flowers.find((flower) => flower.id === flowerId);
   return flower;
+}
+
+export function getAllBouquets() {
+  return BOUQUETS;
+}
+
+export function getBouquetById(id: number) {
+  return BOUQUETS.find((bouquet) => bouquet.id === id);
+}
+
+export function getAllFlowerArrangements() {
+  return FLOWER_ARRANGEMENTS;
+}
+
+export function getFlowerArrangementById(id: number) {
+  return FLOWER_ARRANGEMENTS.find((arrangement) => arrangement.id === id);
 }
