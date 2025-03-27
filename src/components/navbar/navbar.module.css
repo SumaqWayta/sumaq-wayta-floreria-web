@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: min(100% - 20px, 1200px);
+  width: min(100% - 20px, var(--max-width));
   z-index: 4;
 }
 

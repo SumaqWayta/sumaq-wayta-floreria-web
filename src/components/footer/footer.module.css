@@ -8,7 +8,7 @@
 
 .footer {
   display: grid;
-  width: min(100% - 20px, 1200px);
+  width: min(100% - 20px, var(--max-width));
   gap: 2rem;
   align-content: center;
   justify-items: center;
