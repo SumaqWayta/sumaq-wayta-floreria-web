@@ -1,0 +1,14 @@
+.wrapper {
+  text-align: center;
+  color: white;
+  font-size: var(--text-lg);
+  background-color: var(--main-color);
+  font-weight: var(--font-semibold);
+  padding: 0.5rem 2rem;
+  border-radius: var(--rounded-md) var(--rounded-2xl) var(--rounded-md)
+    var(--rounded-2xl);
+}
+
+.wrapper[data-active="true"] {
+  background-color: var(--secondary-color);
+}
