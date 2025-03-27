@@ -1,8 +1,31 @@
 import { getFuneralFlowerByType } from "@/lib/data";
+import { Metadata } from "next";
 import Link from "next/link";
 import { Badge } from "./_components";
 import ProductFlower from "./_components/product-flower/product-flower";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "Arreglos Fúnebres | Flores para Ocasiones Especiales",
+  description:
+    "Encuentra los mejores arreglos fúnebres para expresar condolencias y solidaridad en momentos difíciles.",
+  keywords: ["arreglos fúnebres", "flores", "coronas", "condolencias"],
+  openGraph: {
+    title: "Arreglos Fúnebres | Flores para Ocasiones Especiales",
+    description:
+      "Encuentra los mejores arreglos fúnebres para expresar condolencias y solidaridad en momentos difíciles.",
+    type: "website",
+    url: "https://tusitio.com/arreglos-funebres",
+    images: [
+      {
+        url: "https://tusitio.com/images/arreglos-funebres.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Arreglos Fúnebres",
+      },
+    ],
+  },
+};
 
 interface ArreglosFunebresProps {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
@@ -12,7 +35,7 @@ export default async function ArreglosFunebres({
   searchParams,
 }: ArreglosFunebresProps) {
   const selectedType = Number((await searchParams).tipo) ?? 1;
-  const testingEndpoints = getFuneralFlowerByType(selectedType);
+  const flowers = getFuneralFlowerByType(selectedType);
 
   return (
     <div className={styles.page}>
@@ -35,7 +58,7 @@ export default async function ArreglosFunebres({
         </Link>
       </div>
       <ul className={styles.listFlowers}>
-        {testingEndpoints.map((item) => (
+        {flowers.map((item) => (
           <ProductFlower key={item.id} {...item} type="Arreglos Fúnebres" />
         ))}
       </ul>
