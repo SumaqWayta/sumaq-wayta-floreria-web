@@ -23,6 +23,7 @@ export const Footer = () => {
                 alt="whatsapp"
                 width={28}
                 height={28}
+                loading="lazy"
               />
               Whatsapp
             </Link>
@@ -32,6 +33,7 @@ export const Footer = () => {
                 alt="facebook"
                 width={28}
                 height={28}
+                loading="lazy"
               />
               Facebook
             </Link>
@@ -41,6 +43,7 @@ export const Footer = () => {
                 alt="instagram"
                 width={28}
                 height={28}
+                loading="lazy"
               />
               Instagram
             </Link>
@@ -50,6 +53,7 @@ export const Footer = () => {
                 alt="tiktok"
                 width={28}
                 height={28}
+                loading="lazy"
               />
               Tiktok
             </Link>
@@ -61,27 +65,33 @@ export const Footer = () => {
             <li>
               <Image
                 src="/svg/delivery.svg"
-                alt="whatsapp"
+                alt="delivery"
                 width={28}
                 height={28}
+                loading="lazy"
+                style={{ width: "28px", height: "28px" }}
               />
               Delivery
             </li>
             <li>
               <Image
                 src="/svg/safe-purchase.svg"
-                alt="facebook"
+                alt="compras seguras"
                 width={28}
                 height={28}
+                loading="lazy"
+                style={{ width: "28px", height: "28px" }}
               />
               Compras 100% seguras
             </li>
             <li>
               <Image
                 src="/svg/payment-method.svg"
-                alt="instagram"
+                alt="medios de pago"
                 width={28}
                 height={28}
+                loading="lazy"
+                style={{ width: "28px", height: "28px" }}
               />
               Medios de pago
             </li>

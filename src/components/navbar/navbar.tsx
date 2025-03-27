@@ -27,7 +27,7 @@ export const Navbar = () => {
             alt="Logo"
             width={100}
             height={100}
-            loading="lazy"
+            style={{ width: "100px", height: "auto" }}
           />
           <nav className={styles.navbar}>
             <Link href="/arreglos-funebres">Arreglos Fúnebres</Link>
