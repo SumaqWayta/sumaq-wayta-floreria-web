@@ -9,7 +9,8 @@ export function getAllFuneralFlowers() {
 }
 
 export function getFuneralFlowerByType(id: number) {
-  const type: FLOWER_TYPE = TYPES.find((type) => type.id === id)!;
+  const typeId = id < 5 || id > 0 ? id : 1;
+  const type: FLOWER_TYPE = TYPES.find((type) => type.id === typeId)!;
   const { name } = type;
   return FUNERAL_FLOWERS[name.toLocaleLowerCase() as FuneralFlowerTypes];
 }
