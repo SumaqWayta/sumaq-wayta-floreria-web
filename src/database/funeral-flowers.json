@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Lagrima",
-      "url": "/funeral-flowers/lagrimas/funebre-lagrima-1.svg",
+      "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-1.svg",
       "content": [
         "Rosas",
         "Lirio",
@@ -17,42 +17,42 @@
     {
       "id": 2,
       "name": "Lagrima",
-      "url": "/funeral-flowers/lagrimas/funebre-lagrima-2.svg",
+      "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-2.svg",
       "content": ["Rosas", "Hortensia", "Iris", "Pompo"],
       "price": "89.90"
     },
     {
       "id": 3,
       "name": "Lagrima",
-      "url": "/funeral-flowers/lagrimas/funebre-lagrima-3.svg",
+      "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-3.svg",
       "content": ["Rosas", "Hortensia", "Pompo", "Follaje fino"],
       "price": "89.90"
     },
     {
       "id": 4,
       "name": "Lagrima",
-      "url": "/funeral-flowers/lagrimas/funebre-lagrima-4.svg",
+      "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-4.svg",
       "content": ["Rosas", "Lirio", "Hortensia", "Arañita"],
       "price": "89.90"
     },
     {
       "id": 5,
       "name": "Lagrima",
-      "url": "/funeral-flowers/lagrimas/funebre-lagrima-5.svg",
+      "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-5.svg",
       "content": ["Rosas", "Lirio", "Hortensia", "Astromelia", "Follaje fino"],
       "price": "89.90"
     },
     {
       "id": 6,
       "name": "Lagrima",
-      "url": "/funeral-flowers/lagrimas/funebre-lagrima-6.svg",
+      "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-6.svg",
       "content": ["Rosas", "Lirio", "Hortensia", "Pompo", "Follaje fino"],
       "price": "89.90"
     },
     {
       "id": 7,
       "name": "Lagrima",
-      "url": "/funeral-flowers/lagrimas/funebre-lagrima-7.svg",
+      "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-7.svg",
       "content": [
         "Rosas",
         "Lirio",
@@ -66,28 +66,28 @@
     {
       "id": 8,
       "name": "Lagrima",
-      "url": "/funeral-flowers/lagrimas/funebre-lagrima-8.svg",
+      "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-8.svg",
       "content": ["Rosas", "Hortensia", "Arañita", "Follaje fino"],
       "price": "89.90"
     },
     {
       "id": 9,
       "name": "Lagrima",
-      "url": "/funeral-flowers/lagrimas/funebre-lagrima-9.svg",
+      "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-9.svg",
       "content": ["Rosas", "Hortensia", "Pompo", "Impérico", "Follaje fino"],
       "price": "89.90"
     },
     {
       "id": 10,
       "name": "Lagrima",
-      "url": "/funeral-flowers/lagrimas/funebre-lagrima-10.svg",
+      "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-10.svg",
       "content": ["Rosas", "Hortensia", "Lirio", "Arañita", "Follaje fino"],
       "price": "89.90"
     },
     {
       "id": 11,
       "name": "Lagrima",
-      "url": "/funeral-flowers/lagrimas/funebre-lagrima-11.svg",
+      "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-11.svg",
       "content": [
         "Lágrima",
         "Rosas",
@@ -101,7 +101,7 @@
     {
       "id": 12,
       "name": "Lagrima",
-      "url": "/funeral-flowers/lagrimas/funebre-lagrima-12.svg",
+      "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-12.svg",
       "content": ["Rosas", "Lirio", "Hortensia", "Arañita", "Follaje fino"],
       "price": "89.90"
     }
