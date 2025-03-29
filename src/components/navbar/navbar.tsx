@@ -22,14 +22,17 @@ export const Navbar = () => {
     <>
       <header className={styles.wrapperNavbar}>
         <div className={styles.container}>
-          <Image
-            src="svg/logo.svg"
-            alt="Logo"
-            width={100}
-            height={100}
-            style={{ width: "100px", height: "auto" }}
-          />
+          <Link href="/">
+            <Image
+              src="svg/logo.svg"
+              alt="Logo"
+              width={100}
+              height={100}
+              style={{ width: "100px", height: "auto" }}
+            />
+          </Link>
           <nav className={styles.navbar}>
+            <Link href="/">Inicio</Link>
             <Link href="/arreglos-funebres">Arreglos Fúnebres</Link>
             <Link href="/arreglos-florales">Arreglos Florales</Link>
             <Link href="/ramos">Ramos</Link>
