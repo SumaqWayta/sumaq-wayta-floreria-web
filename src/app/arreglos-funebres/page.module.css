@@ -54,16 +54,10 @@
   }
 }
 
-@media (width >= 64rem) {
-  .wrapperBadges,
-  .listFlowers {
-    grid-template-columns: repeat(4, 240px);
-  }
-}
-
 @media (width >= 80rem) {
   .wrapperBadges,
   .listFlowers {
+    grid-template-columns: repeat(4, 240px);
     gap: 1rem 4rem;
   }
 }
