@@ -30,7 +30,7 @@ export function getAllBouquets() {
 }
 
 export function getBouquetById(id: number) {
-  return BOUQUETS.find((bouquet) => bouquet.id === id);
+  return BOUQUETS.find((bouquet) => bouquet.id === id) || null;
 }
 
 export function getAllFlowerArrangements() {
@@ -38,5 +38,7 @@ export function getAllFlowerArrangements() {
 }
 
 export function getFlowerArrangementById(id: number) {
-  return FLOWER_ARRANGEMENTS.find((arrangement) => arrangement.id === id);
+  return (
+    FLOWER_ARRANGEMENTS.find((arrangement) => arrangement.id === id) || null
+  );
 }
