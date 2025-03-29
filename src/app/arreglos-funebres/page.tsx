@@ -1,8 +1,8 @@
+import { ProductFlower } from "@/components";
 import { getFuneralFlowerByType } from "@/lib/data";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Badge } from "./_components";
-import ProductFlower from "./_components/product-flower/product-flower";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -16,14 +16,6 @@ export const metadata: Metadata = {
       "Encuentra los mejores arreglos fúnebres para expresar condolencias y solidaridad en momentos difíciles.",
     type: "website",
     url: "https://tusitio.com/arreglos-funebres",
-    images: [
-      {
-        url: "https://tusitio.com/images/arreglos-funebres.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Arreglos Fúnebres",
-      },
-    ],
   },
 };
 
@@ -34,7 +26,7 @@ interface ArreglosFunebresProps {
 export default async function ArreglosFunebres({
   searchParams,
 }: ArreglosFunebresProps) {
-  const selectedType = Number((await searchParams).tipo) ?? 1;
+  const selectedType = Number((await searchParams).tipo) || 1;
   const flowers = getFuneralFlowerByType(selectedType);
 
   return (

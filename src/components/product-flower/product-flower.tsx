@@ -10,7 +10,7 @@ interface ProductFlowerProps {
   name?: string;
 }
 
-export default function ProductFlower({
+export function ProductFlower({
   id,
   name,
   url,
