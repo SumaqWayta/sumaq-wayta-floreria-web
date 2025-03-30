@@ -23,13 +23,7 @@ export const Navbar = () => {
       <header className={styles.wrapperNavbar}>
         <div className={styles.container}>
           <Link href="/">
-            <Image
-              src="svg/logo.svg"
-              alt="Logo"
-              width={100}
-              height={100}
-              style={{ width: "100px", height: "auto" }}
-            />
+            <Image src="/svg/logo.svg" alt="Logo" width={100} height={70.7} />
           </Link>
           <nav className={styles.navbar}>
             <Link href="/">Inicio</Link>

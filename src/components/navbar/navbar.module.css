@@ -11,6 +11,11 @@
   align-items: center;
   width: min(100% - 20px, var(--max-width));
   z-index: 4;
+
+  & > a > img {
+    width: 100px;
+    height: auto;
+  }
 }
 
 .navbar {
