@@ -1,0 +1,145 @@
+.page {
+  padding: 3rem 1rem;
+  width: min(100% - 20px, var(--max-width));
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem 0;
+
+  & > h1 {
+    font-size: clamp(var(--text-2xl), 5vw, var(--text-4xl));
+    font-weight: var(--font-semibold);
+  }
+
+  & > img {
+    width: min(100%, 500px);
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  width: min(100% - 20px, 520px);
+  margin: 0 auto;
+  font-size: clamp(var(--text-lg), 4vw, var(--text-xl));
+  color: var(--main-color);
+  gap: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: min(100% - 20px, 200px);
+  gap: 0.5rem;
+
+  & > h2 {
+    font-weight: var(--font-bold);
+    font-size: var(--text-xl);
+  }
+}
+
+.listContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+
+  > li {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+  }
+}
+
+.wrapperPayment {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: solid var(--main-color);
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 16.5rem);
+  justify-self: center;
+
+  & img {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--rounded-lg);
+  }
+}
+
+.wrapperBuy {
+  display: flex;
+  width: min(100% - 20px, 300px);
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 1rem;
+
+  & > button {
+    width: min(100%, 200px);
+    justify-self: center;
+    color: white;
+    font-weight: var(--font-semibold);
+    padding: 0.5rem 1rem;
+    font-size: var(--text-lg);
+    border-radius: var(--rounded-xl);
+  }
+}
+
+.labelPayment {
+  white-space: nowrap;
+  position: absolute;
+  background-color: var(--white);
+  top: -15px;
+  left: 50%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  transform: translateX(-50%);
+}
+
+@media (width >= 64rem) {
+  .page {
+    grid-template-columns: repeat(3, 1fr);
+
+    & > h1 {
+      grid-column: 3 span;
+    }
+
+    & > img {
+      grid-column: 2 span;
+      place-self: center;
+    }
+  }
+
+  .description {
+    flex-direction: column;
+  }
+
+  .content {
+    align-self: center;
+  }
+
+  .wrapperBuy {
+    margin-top: auto;
+    padding-bottom: 1rem;
+  }
+
+  .wrapperSlider {
+    grid-column: 3 span;
+    width: 100%;
+  }
+}
+
+@media (width >= 80rem) {
+  /* Extra Large devices (xl) - >= 80rem (>= 1280px) */
+}
+
+@media (width >= 96rem) {
+  /* 2XL devices (2xl) - >= 96rem (>= 1536px) */
+}
