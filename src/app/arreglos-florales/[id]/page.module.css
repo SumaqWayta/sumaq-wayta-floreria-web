@@ -129,6 +129,11 @@
     margin-top: auto;
     padding-bottom: 1rem;
   }
+
+  .wrapperSlider {
+    grid-column: 3 span;
+    width: 100%;
+  }
 }
 
 @media (width >= 80rem) {

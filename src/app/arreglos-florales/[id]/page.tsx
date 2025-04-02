@@ -1,4 +1,8 @@
-import { getFlowerArrangementById } from "@/lib/data";
+import SliderImage from "@/components/slider-images/slider-image";
+import {
+  getFlowerArrangementById,
+  getRandomFlowerArrangements,
+} from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -19,7 +23,7 @@ export default async function FlowerArrangementPage({
     return notFound();
   }
   const flower = getFlowerArrangementById(parseInt(flowerId));
-
+  const randomFlowers = getRandomFlowerArrangements(parseInt(flowerId));
   if (!flower) {
     return notFound();
   }
@@ -53,6 +57,9 @@ export default async function FlowerArrangementPage({
             </Link>
           </div>
         </div>
+      </div>
+      <div className={styles.wrapperSlider}>
+        <SliderImage data={randomFlowers} />
       </div>
     </div>
   );
