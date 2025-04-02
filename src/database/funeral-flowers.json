@@ -4,6 +4,7 @@
       "id": 1,
       "name": "Lagrima",
       "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-1.svg",
+      "link": "/arreglos-funebres/lagrimas/1",
       "content": [
         "Rosas",
         "Lirio",
@@ -18,6 +19,7 @@
       "id": 2,
       "name": "Lagrima",
       "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-2.svg",
+      "link": "/arreglos-funebres/lagrimas/2",
       "content": ["Rosas", "Hortensia", "Iris", "Pompo"],
       "price": "89.90"
     },
@@ -25,6 +27,7 @@
       "id": 3,
       "name": "Lagrima",
       "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-3.svg",
+      "link": "/arreglos-funebres/lagrimas/3",
       "content": ["Rosas", "Hortensia", "Pompo", "Follaje fino"],
       "price": "89.90"
     },
@@ -32,6 +35,7 @@
       "id": 4,
       "name": "Lagrima",
       "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-4.svg",
+      "link": "/arreglos-funebres/lagrimas/4",
       "content": ["Rosas", "Lirio", "Hortensia", "Arañita"],
       "price": "89.90"
     },
@@ -39,6 +43,7 @@
       "id": 5,
       "name": "Lagrima",
       "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-5.svg",
+      "link": "/arreglos-funebres/lagrimas/5",
       "content": ["Rosas", "Lirio", "Hortensia", "Astromelia", "Follaje fino"],
       "price": "89.90"
     },
@@ -46,6 +51,7 @@
       "id": 6,
       "name": "Lagrima",
       "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-6.svg",
+      "link": "/arreglos-funebres/lagrimas/6",
       "content": ["Rosas", "Lirio", "Hortensia", "Pompo", "Follaje fino"],
       "price": "89.90"
     },
@@ -53,6 +59,7 @@
       "id": 7,
       "name": "Lagrima",
       "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-7.svg",
+      "link": "/arreglos-funebres/lagrimas/7",
       "content": [
         "Rosas",
         "Lirio",
@@ -67,6 +74,7 @@
       "id": 8,
       "name": "Lagrima",
       "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-8.svg",
+      "link": "/arreglos-funebres/lagrimas/8",
       "content": ["Rosas", "Hortensia", "Arañita", "Follaje fino"],
       "price": "89.90"
     },
@@ -74,6 +82,7 @@
       "id": 9,
       "name": "Lagrima",
       "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-9.svg",
+      "link": "/arreglos-funebres/lagrimas/9",
       "content": ["Rosas", "Hortensia", "Pompo", "Impérico", "Follaje fino"],
       "price": "89.90"
     },
@@ -81,6 +90,7 @@
       "id": 10,
       "name": "Lagrima",
       "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-10.svg",
+      "link": "/arreglos-funebres/lagrimas/10",
       "content": ["Rosas", "Hortensia", "Lirio", "Arañita", "Follaje fino"],
       "price": "89.90"
     },
@@ -88,6 +98,7 @@
       "id": 11,
       "name": "Lagrima",
       "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-11.svg",
+      "link": "/arreglos-funebres/lagrimas/11",
       "content": [
         "Lágrima",
         "Rosas",
@@ -102,6 +113,7 @@
       "id": 12,
       "name": "Lagrima",
       "url": "/flowers/funeral-flowers/lagrimas/funebre-lagrima-12.svg",
+      "link": "/arreglos-funebres/lagrimas/12",
       "content": ["Rosas", "Lirio", "Hortensia", "Arañita", "Follaje fino"],
       "price": "89.90"
     }
@@ -112,21 +124,24 @@
       "name": "Tripode",
       "url": "/flowers/funeral-flowers/tripodes/funebre-tripode-1.svg",
       "content": ["Rosas", "Gladiolo", "Hortensia", "Clavel", "Follaje fino"],
-      "price": "189.90"
+      "price": "189.90",
+      "link": "/arreglos-funebres/tripodes/1"
     },
     {
       "id": 2,
       "name": "Tripode",
       "url": "/flowers/funeral-flowers/tripodes/funebre-tripode-2.svg",
       "content": ["Rosas", "Lirio", "Hortensia", "Pompo", "Follaje fino"],
-      "price": "189.90"
+      "price": "189.90",
+      "link": "/arreglos-funebres/tripodes/2"
     },
     {
       "id": 3,
       "name": "Tripode",
       "url": "/flowers/funeral-flowers/tripodes/funebre-tripode-3.svg",
       "content": ["Rosas", "Lirio"],
-      "price": "199.90"
+      "price": "199.90",
+      "link": "/arreglos-funebres/tripodes/3"
     },
     {
       "id": 4,
@@ -140,35 +155,40 @@
         "Cala",
         "Astromelia"
       ],
-      "price": "179.90"
+      "price": "179.90",
+      "link": "/arreglos-funebres/tripodes/4"
     },
     {
       "id": 5,
       "name": "Tripode",
       "url": "/flowers/funeral-flowers/tripodes/funebre-tripode-5.svg",
       "content": ["Rosas", "Lirio", "Hortensia", "Pompo", "Follaje fino"],
-      "price": "189.90"
+      "price": "189.90",
+      "link": "/arreglos-funebres/tripodes/5"
     },
     {
       "id": 6,
       "name": "Tripode",
       "url": "/flowers/funeral-flowers/tripodes/funebre-tripode-6.svg",
       "content": ["Rosas", "Hortensia", "Clavel", "Cartucho", "Follaje fino"],
-      "price": "179.90"
+      "price": "179.90",
+      "link": "/arreglos-funebres/tripodes/6"
     },
     {
       "id": 7,
       "name": "Tripode",
       "url": "/flowers/funeral-flowers/tripodes/funebre-tripode-7.svg",
       "content": ["Rosas", "Hortensia", "Iris", "Lirio", "Arañita"],
-      "price": "179.90"
+      "price": "179.90",
+      "link": "/arreglos-funebres/tripodes/7"
     },
     {
       "id": 8,
       "name": "Tripode",
       "url": "/flowers/funeral-flowers/tripodes/funebre-tripode-8.svg",
       "content": ["Rosas", "Lirio", "Hortensia", "Gladiolo", "Follaje fino"],
-      "price": "239.90"
+      "price": "239.90",
+      "link": "/arreglos-funebres/tripodes/8"
     },
     {
       "id": 9,
@@ -182,7 +202,8 @@
         "Pompo",
         "Follaje fino"
       ],
-      "price": "179.90"
+      "price": "179.90",
+      "link": "/arreglos-funebres/tripodes/9"
     },
     {
       "id": 10,
@@ -196,7 +217,8 @@
         "Pico de loro",
         "Follaje fino"
       ],
-      "price": "199.90"
+      "price": "199.90",
+      "link": "/arreglos-funebres/tripodes/10"
     }
   ],
   "picarones": [
@@ -205,14 +227,16 @@
       "name": "Picaron",
       "url": "/flowers/funeral-flowers/picarones/funebre-picaron-1.svg",
       "content": ["Rosas", "Lirio", "Follaje fino"],
-      "price": "329.90"
+      "price": "329.90",
+      "link": "/arreglos-funebres/picarones/1"
     },
     {
       "id": 2,
       "name": "Picaron",
       "url": "/flowers/funeral-flowers/picarones/funebre-picaron-2.svg",
       "content": ["Rosas", "Lirio", "Hortensia", "Follaje fino"],
-      "price": "239.90"
+      "price": "239.90",
+      "link": "/arreglos-funebres/picarones/2"
     },
     {
       "id": 3,
@@ -226,56 +250,64 @@
         "Margarita",
         "Follaje fino"
       ],
-      "price": "299.90"
+      "price": "299.90",
+      "link": "/arreglos-funebres/picarones/3"
     },
     {
       "id": 4,
       "name": "Picaron",
       "url": "/flowers/funeral-flowers/picarones/funebre-picaron-4.svg",
       "content": ["Rosas", "Hortensia", "Pompo", "Follaje fino"],
-      "price": "219.90"
+      "price": "219.90",
+      "link": "/arreglos-funebres/picarones/4"
     },
     {
       "id": 5,
       "name": "Picaron",
       "url": "/flowers/funeral-flowers/picarones/funebre-picaron-5.svg",
       "content": ["Rosas", "Lirio", "Follaje fino"],
-      "price": "449.90"
+      "price": "449.90",
+      "link": "/arreglos-funebres/picarones/5"
     },
     {
       "id": 6,
       "name": "Picaron",
       "url": "/flowers/funeral-flowers/picarones/funebre-picaron-6.svg",
       "content": ["Rosas", "Follaje fino"],
-      "price": "409.90"
+      "price": "409.90",
+      "link": "/arreglos-funebres/picarones/6"
     },
     {
       "id": 7,
       "name": "Picaron",
       "url": "/flowers/funeral-flowers/picarones/funebre-picaron-7.svg",
       "content": ["Lirio", "Rosas", "Margarita", "Follaje fino"],
-      "price": "289.90"
+      "price": "289.90",
+      "link": "/arreglos-funebres/picarones/7"
     },
     {
       "id": 8,
       "name": "Picaron",
       "url": "/flowers/funeral-flowers/picarones/funebre-picaron-8.svg",
       "content": ["Rosas", "Lirio", "Pompo", "Arañita", "Follaje fino"],
-      "price": "499.90"
+      "price": "499.90",
+      "link": "/arreglos-funebres/picarones/8"
     },
     {
       "id": 9,
       "name": "Picaron",
       "url": "/flowers/funeral-flowers/picarones/funebre-picaron-9.svg",
       "content": ["Rosas", "Lirio", "Gerbera", "Veronica", "Astromelia"],
-      "price": "399.90"
+      "price": "399.90",
+      "link": "/arreglos-funebres/picarones/9"
     },
     {
       "id": 10,
       "name": "Picaron",
       "url": "/flowers/funeral-flowers/picarones/funebre-picaron-10.svg",
       "content": ["Gerbera", "Pompo", "Lirio", "Follaje fino"],
-      "price": "389.90"
+      "price": "389.90",
+      "link": "/arreglos-funebres/picarones/10"
     },
     {
       "id": 11,
@@ -288,7 +320,8 @@
         "Margarita",
         "Follaje fino"
       ],
-      "price": "389.90"
+      "price": "389.90",
+      "link": "/arreglos-funebres/picarones/11"
     }
   ],
   "coronas": [
@@ -304,7 +337,8 @@
         "Pompo",
         "Follaje fino"
       ],
-      "price": "329.90"
+      "price": "329.90",
+      "link": "/arreglos-funebres/coronas/1"
     },
     {
       "id": 2,
@@ -312,7 +346,8 @@
       "edition": "Corazon",
       "url": "/flowers/funeral-flowers/coronas/funebre-corona-2.svg",
       "content": ["Pompo", "Rosas", "Follaje fino"],
-      "price": "279.90"
+      "price": "279.90",
+      "link": "/arreglos-funebres/coronas/2"
     },
     {
       "id": 3,
@@ -326,28 +361,32 @@
         "Astromelia",
         "Follaje fino"
       ],
-      "price": "189.90"
+      "price": "189.90",
+      "link": "/arreglos-funebres/coronas/3"
     },
     {
       "id": 4,
       "name": "Corona",
       "url": "/flowers/funeral-flowers/coronas/funebre-corona-4.svg",
       "content": ["Rosas", "Lirio", "Pompo", "Astromelia", "Follaje fino"],
-      "price": "189.90"
+      "price": "189.90",
+      "link": "/arreglos-funebres/coronas/4"
     },
     {
       "id": 5,
       "name": "Corona",
       "url": "/flowers/funeral-flowers/coronas/funebre-corona-5.svg",
       "content": ["Pompo", "Rosas", "Follaje fino"],
-      "price": "219.90"
+      "price": "219.90",
+      "link": "/arreglos-funebres/coronas/5"
     },
     {
       "id": 6,
       "name": "Corona",
       "url": "/flowers/funeral-flowers/coronas/funebre-corona-6.svg",
       "content": ["Rosas", "Iris", "Lirio", "Pompo", "Arañita", "Follaje fino"],
-      "price": "409.90"
+      "price": "409.90",
+      "link": "/arreglos-funebres/coronas/6"
     },
     {
       "id": 7,
@@ -363,14 +402,16 @@
         "Margarita",
         "Follaje fino"
       ],
-      "price": "199.90"
+      "price": "199.90",
+      "link": "/arreglos-funebres/coronas/7"
     },
     {
       "id": 8,
       "name": "Corona",
       "url": "/flowers/funeral-flowers/coronas/funebre-corona-8.svg",
       "content": ["Rosas", "Hortensia", "Girasol", "Pompo", "Follaje fino"],
-      "price": "199.90"
+      "price": "199.90",
+      "link": "/arreglos-funebres/coronas/8"
     },
     {
       "id": 9,
@@ -384,14 +425,16 @@
         "Gladiolo",
         "Follaje fino"
       ],
-      "price": "179.90"
+      "price": "179.90",
+      "link": "/arreglos-funebres/coronas/9"
     },
     {
       "id": 10,
       "name": "Corona",
       "url": "/flowers/funeral-flowers/coronas/funebre-corona-10.svg",
       "content": ["Rosas", "Lirio", "Pompo", "Estatis", "Follaje fino"],
-      "price": "229.90"
+      "price": "229.90",
+      "link": "/arreglos-funebres/coronas/10"
     },
     {
       "id": 11,
@@ -406,7 +449,8 @@
         "Gladiolo",
         "Astromelia"
       ],
-      "price": "189.90"
+      "price": "189.90",
+      "link": "/arreglos-funebres/coronas/11"
     },
     {
       "id": 12,
@@ -419,7 +463,8 @@
         "Astromelia",
         "Follaje fino"
       ],
-      "price": "179.90"
+      "price": "179.90",
+      "link": "/arreglos-funebres/coronas/12"
     },
     {
       "id": 13,
@@ -427,7 +472,8 @@
       "edition": "Especial",
       "url": "/flowers/funeral-flowers/coronas/funebre-corona-13.svg",
       "content": ["Rosas", "Pompo", "Lirio", "Gladiolo", "Follaje fino"],
-      "price": "229.90"
+      "price": "229.90",
+      "link": "/arreglos-funebres/coronas/13"
     },
     {
       "id": 14,
@@ -441,7 +487,8 @@
         "Gladiolo",
         "Follaje fino"
       ],
-      "price": "179.90"
+      "price": "179.90",
+      "link": "/arreglos-funebres/coronas/14"
     },
     {
       "id": 15,
@@ -449,35 +496,40 @@
       "edition": "Premium",
       "url": "/flowers/funeral-flowers/coronas/funebre-corona-15.svg",
       "content": ["Rosas", "Lirio", "Gladiolo", "Hortensia", "Follaje fino"],
-      "price": "249.90"
+      "price": "249.90",
+      "link": "/arreglos-funebres/coronas/15"
     },
     {
       "id": 16,
       "name": "Corona",
       "url": "/flowers/funeral-flowers/coronas/funebre-corona-16.svg",
       "content": ["Lirio", "Rosas", "Pompo", "Follaje fino"],
-      "price": "249.90"
+      "price": "249.90",
+      "link": "/arreglos-funebres/coronas/16"
     },
     {
       "id": 17,
       "name": "Corona",
       "url": "/flowers/funeral-flowers/coronas/funebre-corona-17.svg",
       "content": ["Rosas", "Pompo", "Lirio", "Follaje fino"],
-      "price": "179.90"
+      "price": "179.90",
+      "link": "/arreglos-funebres/coronas/17"
     },
     {
       "id": 18,
       "name": "Corona",
       "url": "/flowers/funeral-flowers/coronas/funebre-corona-18.svg",
       "content": ["Rosas", "Pompo", "Anthurium", "Follaje fino"],
-      "price": "219.90"
+      "price": "219.90",
+      "link": "/arreglos-funebres/coronas/18"
     },
     {
       "id": 19,
       "name": "Corona",
       "url": "/flowers/funeral-flowers/coronas/funebre-corona-19.svg",
       "content": ["Rosas", "Pompo", "Follaje fino"],
-      "price": "229.90"
+      "price": "229.90",
+      "link": "/arreglos-funebres/coronas/19"
     }
   ]
 }
