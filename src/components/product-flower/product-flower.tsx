@@ -7,6 +7,7 @@ interface ProductFlowerProps {
   url: string;
   price: string;
   type: string;
+  link: string;
   name?: string;
 }
 
@@ -16,10 +17,11 @@ export function ProductFlower({
   url,
   price,
   type,
+  link,
 }: ProductFlowerProps) {
   return (
     <li className={styles.wrapper}>
-      <Link href={"/arreglos-funebres"}>
+      <Link href={link}>
         <Image src={url} alt={`image ${name} ${id}`} width={200} height={200} />
         <div className={styles.description}>
           <h3>

@@ -61,7 +61,7 @@ export default function SliderImage({ data }: SliderImageProps) {
       <ul className={styles.slider} ref={sliderRef}>
         {data.map((flower, index) => (
           <li className={styles.item} key={index}>
-            <Link href={`/`}>
+            <Link href={flower.link}>
               <Image
                 src={flower.url}
                 alt={`Flower ${flower.name} ${flower.id}`}
