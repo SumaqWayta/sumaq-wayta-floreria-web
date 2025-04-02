@@ -14,6 +14,7 @@ export interface FLOWER {
   name: string;
   url: string;
   price: string;
+  link: string;
   content: string[];
   edition?: string;
 }
