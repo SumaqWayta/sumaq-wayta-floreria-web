@@ -15,18 +15,36 @@ export function getFuneralFlowerByType(id: number) {
   return FUNERAL_FLOWERS[name.toLocaleLowerCase() as FuneralFlowerTypes];
 }
 
-export function getTypesFlowers() {
+export function getTypesFuneralFlowers() {
   return TYPES;
 }
 
-export function getFlowerById(typeId: number, flowerId: number) {
+export function getFuneralFlowerById(typeId: number, flowerId: number) {
   const flowers = getFuneralFlowerByType(typeId);
   const flower = flowers.find((flower) => flower.id === flowerId);
   return flower;
 }
 
+export function getRandomFuneralFlower(
+  typeId: number,
+  excludedId: number,
+  count: number = 6
+) {
+  const flowers = getFuneralFlowerByType(typeId);
+  return flowers
+    .filter((flower) => flower.id !== excludedId)
+    .sort(() => Math.random() - 0.5)
+    .slice(0, count);
+}
+
 export function getAllBouquets() {
   return BOUQUETS;
+}
+
+export function getRandomBouquets(excludedId: number, count: number = 6) {
+  return BOUQUETS.filter((flower) => flower.id !== excludedId)
+    .sort(() => Math.random() - 0.5)
+    .slice(0, count);
 }
 
 export function getBouquetById(id: number) {
@@ -35,6 +53,15 @@ export function getBouquetById(id: number) {
 
 export function getAllFlowerArrangements() {
   return FLOWER_ARRANGEMENTS;
+}
+
+export function getRandomFlowerArrangements(
+  excludedId: number,
+  count: number = 6
+) {
+  return FLOWER_ARRANGEMENTS.filter((flower) => flower.id !== excludedId)
+    .sort(() => Math.random() - 0.5)
+    .slice(0, count);
 }
 
 export function getFlowerArrangementById(id: number) {
