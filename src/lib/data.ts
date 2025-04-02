@@ -15,6 +15,10 @@ export function getFuneralFlowerByType(id: number) {
   return FUNERAL_FLOWERS[name.toLocaleLowerCase() as FuneralFlowerTypes];
 }
 
+export function getFuneralFlowerByTypeName(type: FuneralFlowerTypes) {
+  return FUNERAL_FLOWERS[type.toLocaleLowerCase() as FuneralFlowerTypes];
+}
+
 export function getTypesFuneralFlowers() {
   return TYPES;
 }
@@ -25,12 +29,21 @@ export function getFuneralFlowerById(typeId: number, flowerId: number) {
   return flower;
 }
 
-export function getRandomFuneralFlower(
-  typeId: number,
+export function getFuneralFlowerByName(
+  type: FuneralFlowerTypes,
+  flowerId: number
+) {
+  const flowers = getFuneralFlowerByTypeName(type);
+  const flower = flowers.find((flower) => flower.id === flowerId);
+  return flower;
+}
+
+export function getRandomFuneralFlowers(
+  type: FuneralFlowerTypes,
   excludedId: number,
   count: number = 6
 ) {
-  const flowers = getFuneralFlowerByType(typeId);
+  const flowers = getFuneralFlowerByTypeName(type);
   return flowers
     .filter((flower) => flower.id !== excludedId)
     .sort(() => Math.random() - 0.5)
