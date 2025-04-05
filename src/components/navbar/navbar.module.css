@@ -23,7 +23,7 @@
   gap: 2rem;
   padding-right: 1rem;
 
-  a {
+  & > a {
     font-size: var(--text-lg);
     font-weight: var(--font-semibold);
     color: var(--main-color);
