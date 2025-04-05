@@ -4,13 +4,14 @@ import styles from "./sidebar.module.css";
 
 interface SidebarProps {
   value: boolean;
+  onClose: () => void;
 }
 
-export const Sidebar = ({ value }: SidebarProps) => {
+export const Sidebar = ({ value, onClose }: SidebarProps) => {
   return (
     <div data-open={value} className={styles.wrapperSidebar}>
       <aside data-open={value} className={styles.sidebar} role="navigation">
-        <Link href="/">
+        <Link href="/" onClick={onClose}>
           <Image
             src={"/svg/logo.svg"}
             alt="logo"
@@ -21,16 +22,24 @@ export const Sidebar = ({ value }: SidebarProps) => {
         </Link>
         <hr />
         <nav className={styles.navigation}>
-          <Link className={styles.link} href="/">
+          <Link className={styles.link} href="/" onClick={onClose}>
             Inicio
           </Link>
-          <Link className={styles.link} href="/arreglos-funebres">
+          <Link
+            className={styles.link}
+            href="/arreglos-funebres"
+            onClick={onClose}
+          >
             Arreglos Fúnebres
           </Link>
-          <Link className={styles.link} href="/arreglos-florales">
+          <Link
+            className={styles.link}
+            href="/arreglos-florales"
+            onClick={onClose}
+          >
             Arreglos Florales
           </Link>
-          <Link className={styles.link} href="/ramos">
+          <Link className={styles.link} href="/ramos" onClick={onClose}>
             Ramos
           </Link>
         </nav>
