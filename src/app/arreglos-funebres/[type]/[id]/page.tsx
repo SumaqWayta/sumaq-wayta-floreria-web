@@ -11,6 +11,27 @@ interface Params {
   type: FuneralFlowerTypes;
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<Params>;
+}) {
+  const { id: flowerId, type: flowerType } = await params;
+  const flower = getFuneralFlowerByName(flowerType, parseInt(flowerId));
+
+  if (!flower) return { title: "Flor no encontrada" };
+
+  return {
+    title: `${flower.name} | Flores Funerarias`,
+    description: `Compra ${flower.name}, un hermoso arreglo floral funerario. Envío rápido y seguro.`,
+    openGraph: {
+      title: `${flower.name} | Flores Funerarias`,
+      description: `Compra ${flower.name}, un hermoso arreglo floral funerario. Envío rápido y seguro.`,
+      images: [{ url: flower.url, width: 1200, height: 630 }],
+    },
+  };
+}
+
 export default async function FlowerArrangementPage({
   params,
 }: {
