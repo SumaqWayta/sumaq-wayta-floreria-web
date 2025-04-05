@@ -31,9 +31,12 @@
   grid: 240px;
   padding: 2rem 0;
 
-  & a,
-  button {
+  & > a {
     width: min(100%, 240px);
+
+    & > button {
+      width: min(100%, 240px);
+    }
   }
 }
 
@@ -60,8 +63,4 @@
     grid-template-columns: repeat(4, 240px);
     gap: 1rem 4rem;
   }
-}
-
-@media (width >= 96rem) {
-  /* 2XL devices (2xl) - >= 96rem (>= 1536px) */
 }
