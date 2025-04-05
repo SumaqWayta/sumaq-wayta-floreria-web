@@ -34,7 +34,7 @@ export const Navbar = () => {
           <ButtonHamburger value={showSidebar} onClick={changeShowSidebar} />
         </div>
       </header>
-      <Sidebar value={showSidebar} onClose={() => setShowSidebar(false)} />
+      <Sidebar value={showSidebar} onClose={changeShowSidebar} />
     </>
   );
 };
