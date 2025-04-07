@@ -15,7 +15,15 @@ export const metadata: Metadata = {
     description:
       "Encuentra los mejores arreglos fúnebres para expresar condolencias y solidaridad en momentos difíciles.",
     type: "website",
-    url: "https://tusitio.com/arreglos-funebres",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/arreglos-funebres`,
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/images/og-logo.png`,
+        width: 1200,
+        height: 630,
+        alt: "Hermosos arreglos funebres para toda ocasión",
+      },
+    ],
   },
 };
 

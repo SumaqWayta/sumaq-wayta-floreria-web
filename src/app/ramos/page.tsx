@@ -13,7 +13,15 @@ export const metadata: Metadata = {
     description:
       "Explora nuestra colección de ramos de flores perfectos para cualquier ocasión especial. Envío a domicilio disponible.",
     type: "website",
-    url: "https://tusitio.com/ramos",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/ramos`,
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/images/og-logo.png`,
+        width: 1200,
+        height: 630,
+        alt: "Hermosos ramos de flores para toda ocasión",
+      },
+    ],
   },
 };
 

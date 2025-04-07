@@ -1,5 +1,6 @@
 import SliderImage from "@/components/slider-images/slider-image";
 import { getBouquetById, getRandomBouquets } from "@/lib/data";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -9,7 +10,53 @@ interface Params {
   id: string;
 }
 
-export default async function FlowerArrangementPage({
+// Implementación de los metadatos en español
+export async function generateMetadata({
+  params,
+}: {
+  params: Params;
+}): Promise<Metadata> {
+  const { id } = params;
+  const bouquet = getBouquetById(parseInt(id));
+  if (!bouquet) {
+    return {
+      title: "Ramo no encontrado",
+      description: "Este ramo no existe.",
+      openGraph: {
+        title: "Ramo no encontrado",
+        description: "Este ramo no existe.",
+        type: "website",
+      },
+    };
+  }
+
+  const title = `${bouquet.name}`;
+  const description = `Descubre nuestro exquisito ramo de flores, ideal para cualquier ocasión.`;
+  const imageUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/images/og-logo.png`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/ramos/${id}`,
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: bouquet.name,
+        },
+      ],
+      type: "website",
+    },
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/ramos/${id}`,
+    },
+  };
+}
+export default async function BouquetPage({
   params,
 }: {
   params: Promise<Params>;

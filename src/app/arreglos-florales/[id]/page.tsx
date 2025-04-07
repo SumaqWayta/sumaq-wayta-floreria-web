@@ -3,6 +3,7 @@ import {
   getFlowerArrangementById,
   getRandomFlowerArrangements,
 } from "@/lib/data";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -10,6 +11,52 @@ import styles from "./page.module.css";
 
 interface Params {
   id: string;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Params;
+}): Promise<Metadata> {
+  const { id } = params;
+  const flower = getFlowerArrangementById(parseInt(id));
+  if (!flower) {
+    return {
+      title: "Ramo no encontrado",
+      description: "Este ramo de flores no existe.",
+      openGraph: {
+        title: "Ramo no encontrado",
+        description: "Este ramo de flores no existe.",
+        type: "website",
+      },
+    };
+  }
+
+  const title = `${flower.name}`;
+  const description = `Explora nuestro hermoso arreglo floral. Perfecto para cualquier ocasión.`;
+  const imageUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/images/og-logo.png`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/images/og-logo.png`,
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: flower.name,
+        },
+      ],
+      type: "website",
+    },
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/arreglos-florales/${id}`,
+    },
+  };
 }
 
 export default async function FlowerArrangementPage({

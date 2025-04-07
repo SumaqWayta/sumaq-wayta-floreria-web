@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "Arreglos Florales | Ramos y Bouquets para Toda Ocasión",
+  title: "Arreglos Florales | Arreglos para Toda Ocasión",
   description:
     "Descubre nuestra exclusiva colección de arreglos florales, ideales para cualquier ocasión especial. Envío a domicilio disponible.",
   keywords: [
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     "flores naturales",
   ],
   openGraph: {
-    title: "Arreglos Florales | Ramos y Bouquets para Toda Ocasión",
+    title: "Arreglos Florales | Arreglos para Toda Ocasión",
     description:
       "Descubre nuestra exclusiva colección de arreglos florales, ideales para cualquier ocasión especial. Envío a domicilio disponible.",
     type: "website",
-    url: "https://tusitio.com/arreglos-florales",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/arreglos-florales`,
     images: [
       {
-        url: "https://tusitio.com/images/arreglos-florales.jpg",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/images/og-logo.png`,
         width: 1200,
         height: 630,
         alt: "Hermosos arreglos florales para toda ocasión",

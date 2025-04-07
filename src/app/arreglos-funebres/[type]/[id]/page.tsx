@@ -19,20 +19,45 @@ export async function generateMetadata({
   const { id: flowerId, type: flowerType } = await params;
   const flower = getFuneralFlowerByName(flowerType, parseInt(flowerId));
 
-  if (!flower) return { title: "Flor no encontrada" };
+  if (!flower) {
+    return {
+      title: "Flor no encontrada | Flores Funerarias",
+      description: "Lo sentimos, no encontramos esta flor funeraria.",
+      openGraph: {
+        title: "Flor no encontrada | Flores Funerarias",
+        description: "Lo sentimos, no encontramos esta flor funeraria.",
+        type: "website",
+      },
+    };
+  }
+
+  const title = `${flower.name} | Flores Funerarias`;
+  const description = `Compra un hermoso arreglo floral funerario. Envío rápido y seguro para tus seres queridos.`;
 
   return {
-    title: `${flower.name} | Flores Funerarias`,
-    description: `Compra ${flower.name}, un hermoso arreglo floral funerario. Envío rápido y seguro.`,
+    title,
+    description,
     openGraph: {
-      title: `${flower.name} | Flores Funerarias`,
-      description: `Compra ${flower.name}, un hermoso arreglo floral funerario. Envío rápido y seguro.`,
-      images: [{ url: flower.url, width: 1200, height: 630 }],
+      title,
+      description,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/arreglos-funebres/${flowerType}/${flowerId}`,
+      images: [
+        {
+          url: `${process.env.NEXT_PUBLIC_BASE_URL}/images/og-logo.png`,
+          width: 1200,
+          height: 630,
+          alt: flower.name,
+        },
+      ],
+      type: "website",
+    },
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/arreglos-funebres/${flowerType}/${flowerId}`,
     },
   };
 }
 
-export default async function FlowerArrangementPage({
+export default async function FuneralFlowerPage({
   params,
 }: {
   params: Promise<Params>;
