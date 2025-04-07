@@ -16,9 +16,9 @@ interface Params {
 export async function generateMetadata({
   params,
 }: {
-  params: Params;
+  params: Promise<Params>;
 }): Promise<Metadata> {
-  const { id } = params;
+  const { id } = await params;
   const flower = getFlowerArrangementById(parseInt(id));
   if (!flower) {
     return {

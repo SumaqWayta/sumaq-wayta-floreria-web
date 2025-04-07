@@ -1,6 +1,7 @@
 import SliderImage from "@/components/slider-images/slider-image";
 import { getFuneralFlowerByName, getRandomFuneralFlowers } from "@/lib/data";
 import { FuneralFlowerTypes } from "@/types/flower";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -15,7 +16,7 @@ export async function generateMetadata({
   params,
 }: {
   params: Promise<Params>;
-}) {
+}): Promise<Metadata> {
   const { id: flowerId, type: flowerType } = await params;
   const flower = getFuneralFlowerByName(flowerType, parseInt(flowerId));
 
