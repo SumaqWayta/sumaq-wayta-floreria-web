@@ -1,0 +1,55 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  overflow: scroll;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+
+.image {
+  scroll-snap-align: start;
+  flex: 1;
+  min-width: 100%;
+  min-height: 150px;
+  object-fit: cover;
+  object-position: left;
+  max-height: 700px;
+}
+
+.listDots {
+  display: flex;
+  position: absolute;
+  bottom: 0.2rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.listDots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 1rem;
+}
+
+.dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  background: inherit;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.dot[data-active="true"] {
+  background-color: var(--main-color);
+}

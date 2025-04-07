@@ -1,0 +1,141 @@
+.wrapper {
+  display: grid;
+  position: relative;
+  justify-content: center;
+  align-self: center;
+  gap: 1rem;
+}
+
+.slider {
+  display: flex;
+  overflow: scroll;
+  width: 100%;
+  max-width: min(80dvw, 200px);
+  min-height: 245px;
+  gap: 1rem;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+
+.item {
+  min-width: 200px;
+  scroll-snap-align: start;
+  transition: all 300ms ease-in-out;
+
+  & h3 {
+    padding-top: 0.5rem;
+    color: var(--main-color);
+    font-weight: var(--font-semibold);
+    font-size: var(--text-lg);
+    text-align: center;
+  }
+}
+
+.item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.listDots {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.listDots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: gray;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.dot[data-active="true"] {
+  background-color: var(--main-color);
+  transform: scale(1.2);
+}
+
+.arrowLeft {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-100%);
+  z-index: 1;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 30px;
+  border: solid var(--main-color);
+  border-radius: var(--rounded-full);
+}
+
+.arrowRight {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: solid var(--main-color);
+  border-radius: var(--rounded-full);
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-100%);
+  z-index: 1;
+}
+
+@media (width >= 40rem) {
+  .wrapper {
+    width: min(85dvw, 600px);
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    display: flex;
+  }
+
+  .slider {
+    max-width: min(80dvw, 416px);
+  }
+}
+
+@media (width >= 48rem) {
+  .wrapper {
+    width: min(85dvw, 780px);
+  }
+
+  .slider {
+    max-width: min(80dvw, 632px);
+    margin: 0 auto;
+  }
+}
+
+@media (width >= 64rem) {
+  .wrapper {
+    width: min(90dvw, 980px);
+  }
+
+  .slider {
+    gap: 1rem;
+    max-width: min(100%, 872px);
+    overflow: hidden;
+  }
+
+  .item {
+    min-width: 280px;
+    width: 280px;
+  }
+}

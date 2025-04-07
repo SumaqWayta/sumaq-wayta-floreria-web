@@ -1,0 +1,31 @@
+.divider {
+  width: min(100% - 20px, var(--max-width));
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
+
+  & span {
+    height: 0.5rem;
+    border-radius: var(--rounded-full);
+    background-color: var(--secondary-color);
+  }
+
+  & span:nth-child(1) {
+    width: 50%;
+  }
+
+  & span:nth-child(2) {
+    width: 10%;
+  }
+
+  & span:nth-child(3) {
+    width: 25%;
+  }
+
+  & span:nth-child(4) {
+    width: 15%;
+  }
+}
