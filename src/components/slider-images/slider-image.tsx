@@ -11,7 +11,7 @@ interface SliderImageProps {
 
 export default function SliderImage({ data }: SliderImageProps) {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-  const [itemsPerView, setItemsPerView] = useState<number>(1); // Cantidad de elementos visibles
+  const [itemsPerView, setItemsPerView] = useState<number>(1);
   const sliderRef = useRef<HTMLUListElement | null>(null);
   const totalItems: number = data.length;
 
