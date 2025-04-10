@@ -1,4 +1,5 @@
 import Whatsapp from "@/assets/icons/whatsapp";
+import { socialNetworks } from "@/data/social-networks";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -41,6 +42,10 @@ export const metadata: Metadata = {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}`,
   },
 };
+
+const whatsappMessage = "Hola, estoy interesado en comprar flores";
+const whatsappUrl = `${socialNetworks.whatsapp}?text=${whatsappMessage}`;
+
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -71,7 +76,13 @@ export default function Home() {
         alt="Imagen de fondo"
         className={styles.imageFooter}
       />
-      <Link href="/contacto" className={styles.whatsappButton}>
+      <Link
+        href={whatsappUrl}
+        className={styles.whatsappButton}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="link whatsapp"
+      >
         <Whatsapp width={60} height={60} />
       </Link>
     </div>
