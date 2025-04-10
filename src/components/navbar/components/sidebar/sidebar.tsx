@@ -1,3 +1,4 @@
+import { socialNetworks } from "@/data/social-networks";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./sidebar.module.css";
@@ -47,7 +48,7 @@ export const Sidebar = ({ value, onClose }: SidebarProps) => {
         <nav className={styles.socialNavigation}>
           <a
             className={styles.link}
-            href="/"
+            href={socialNetworks.facebook}
             target="_blank"
             aria-label="link a facebook"
           >
@@ -60,7 +61,7 @@ export const Sidebar = ({ value, onClose }: SidebarProps) => {
           </a>
           <a
             className={styles.link}
-            href="/"
+            href={socialNetworks.tiktok}
             target="_blank"
             aria-label="link a tiktok"
           >
@@ -68,13 +69,13 @@ export const Sidebar = ({ value, onClose }: SidebarProps) => {
           </a>
           <a
             className={styles.link}
-            href="/"
+            href={socialNetworks.instagram}
             target="_blank"
             aria-label="link a instagram"
           >
             <Image
               src="/svg/instagram.svg"
-              alt="whatsapp"
+              alt="instagram"
               width={40}
               height={40}
             />

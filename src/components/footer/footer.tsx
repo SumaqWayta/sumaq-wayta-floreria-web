@@ -1,3 +1,4 @@
+import { socialNetworks } from "@/data/social-networks";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./footer.module.css";
@@ -17,7 +18,11 @@ export const Footer = () => {
         <div className={styles.wrapperSocialNavigation}>
           <h3>Redes Sociales</h3>
           <nav className={styles.socialNavigation}>
-            <Link href="/">
+            <Link
+              href={socialNetworks.whatsapp}
+              target="_blank"
+              aria-label="link whatsapp"
+            >
               <Image
                 src="/svg/whatsapp.svg"
                 alt="whatsapp"
@@ -27,7 +32,11 @@ export const Footer = () => {
               />
               Whatsapp
             </Link>
-            <Link href="/">
+            <Link
+              href={socialNetworks.facebook}
+              target="_blank"
+              aria-label="link facebook"
+            >
               <Image
                 src="/svg/facebook.svg"
                 alt="facebook"
@@ -37,7 +46,11 @@ export const Footer = () => {
               />
               Facebook
             </Link>
-            <Link href="/">
+            <Link
+              href={socialNetworks.instagram}
+              target="_blank"
+              aria-label="link instagram"
+            >
               <Image
                 src="/svg/instagram.svg"
                 alt="instagram"
@@ -47,7 +60,11 @@ export const Footer = () => {
               />
               Instagram
             </Link>
-            <Link href="/">
+            <Link
+              href={socialNetworks.tiktok}
+              target="_blank"
+              aria-label="link tiktok"
+            >
               <Image
                 src="/svg/tiktok.svg"
                 alt="tiktok"
