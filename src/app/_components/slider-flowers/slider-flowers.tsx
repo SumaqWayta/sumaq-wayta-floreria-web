@@ -16,60 +16,58 @@ interface SliderFlowersProps {
 export function SliderFlowers({ data, redirect }: SliderFlowersProps) {
   const sliderRef = useRef<HTMLUListElement | null>(null);
   const [activeIndex, setActiveIndex] = useState<number>(0);
-  const totalItems = data.length;
 
   useEffect(() => {
     const slider = sliderRef.current;
     if (!slider) return;
 
     const handleScroll = () => {
-      const scrollLeft = slider.scrollLeft;
-      const isWideScreen = window.innerWidth >= 1024;
+      requestAnimationFrame(() => {
+        const items = slider.querySelectorAll<HTMLElement>("[data-item]");
+        const scrollLeft = slider.scrollLeft;
+        const isWideScreen = window.innerWidth >= 1024;
 
-      if (isWideScreen) {
-        const containerCenter = scrollLeft + slider.offsetWidth / 2;
-        let closestIndex = 0;
-        let closestDistance = Infinity;
+        if (isWideScreen) {
+          const containerCenter = scrollLeft + slider.offsetWidth / 2;
+          let closestIndex = 0;
+          let closestDistance = Infinity;
 
-        // Iniciar en 1 para saltar el primer separator
-        // Finalizar en totalItems + 1 para ignorar el último separator
-        for (let i = 1; i <= totalItems; i++) {
-          const item = slider.children[i] as HTMLElement;
-          const itemCenter = item.offsetLeft + item.offsetWidth / 2;
-          const distance = Math.abs(containerCenter - itemCenter);
+          items.forEach((item, i) => {
+            const itemCenter = item.offsetLeft + item.offsetWidth / 2;
+            const distance = Math.abs(containerCenter - itemCenter);
+            if (distance < closestDistance) {
+              closestDistance = distance;
+              closestIndex = i;
+            }
+          });
 
-          if (distance < closestDistance) {
-            closestDistance = distance;
-            closestIndex = i - 1; // Restamos 1 para mapear con data[index]
+          setActiveIndex(closestIndex);
+        } else {
+          let cumulativeWidth = 0;
+          let newIndex = 0;
+
+          for (let i = 0; i < items.length; i++) {
+            const item = items[i];
+            cumulativeWidth += item.offsetWidth;
+
+            if (scrollLeft <= cumulativeWidth) {
+              newIndex = i;
+              break;
+            }
           }
+
+          setActiveIndex(newIndex);
         }
-
-        setActiveIndex(closestIndex);
-      } else {
-        let cumulativeWidth = 0;
-        let newIndex = 0;
-
-        for (let i = 1; i <= totalItems; i++) {
-          const item = slider.children[i] as HTMLElement;
-          cumulativeWidth += item.offsetWidth;
-
-          if (scrollLeft <= cumulativeWidth) {
-            newIndex = i - 1;
-            break;
-          }
-        }
-
-        setActiveIndex(newIndex);
-      }
+      });
     };
 
     slider.addEventListener("scroll", handleScroll);
-    handleScroll(); // Ejecutar en el primer render
+    requestAnimationFrame(() => handleScroll());
 
     return () => {
       slider.removeEventListener("scroll", handleScroll);
     };
-  }, [totalItems]);
+  }, [data.length]);
 
   const scrollByOffset = (offset: number) => {
     const slider = sliderRef.current;
@@ -97,6 +95,7 @@ export function SliderFlowers({ data, redirect }: SliderFlowersProps) {
             className={styles.item}
             key={index}
             data-active={index === activeIndex}
+            data-item
           >
             <Link href={`${redirect}/${flower.id}`}>
               <Image
