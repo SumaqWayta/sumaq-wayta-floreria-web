@@ -43,20 +43,22 @@ export function SliderFlowers({ data, redirect }: SliderFlowersProps) {
 
           setActiveIndex(closestIndex);
         } else {
-          let cumulativeWidth = 0;
-          let newIndex = 0;
+          // 📱 Mejora para móviles: detectar ítem más visible en pantalla
+          let minOffset = Infinity;
+          let visibleIndex = 0;
 
-          for (let i = 0; i < items.length; i++) {
-            const item = items[i];
-            cumulativeWidth += item.offsetWidth;
+          items.forEach((item, i) => {
+            const itemLeft = item.getBoundingClientRect().left;
+            const sliderLeft = slider.getBoundingClientRect().left;
+            const distanceToLeft = Math.abs(itemLeft - sliderLeft);
 
-            if (scrollLeft <= cumulativeWidth) {
-              newIndex = i;
-              break;
+            if (distanceToLeft < minOffset) {
+              minOffset = distanceToLeft;
+              visibleIndex = i;
             }
-          }
+          });
 
-          setActiveIndex(newIndex);
+          setActiveIndex(visibleIndex);
         }
       });
     };
