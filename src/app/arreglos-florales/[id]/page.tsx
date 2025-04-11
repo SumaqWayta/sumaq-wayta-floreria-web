@@ -1,4 +1,5 @@
 import SliderImage from "@/components/slider-images/slider-image";
+import { socialNetworks } from "@/data/social-networks";
 import {
   getFlowerArrangementById,
   getRandomFlowerArrangements,
@@ -75,6 +76,11 @@ export default async function FlowerArrangementPage({
     return notFound();
   }
 
+  const messageWhatsapp = `¡Hola! Me interesa el ${flower.name.toLocaleLowerCase()} - ${
+    flower.id
+  } de S/ ${flower.price}. ¿Está disponible?`;
+  const urlWhatsapp = `${socialNetworks.whatsapp}?text=${messageWhatsapp}`;
+
   return (
     <div className={styles.page}>
       <h1>
@@ -91,7 +97,9 @@ export default async function FlowerArrangementPage({
           </ul>
         </div>
         <div className={styles.wrapperBuy}>
-          <button>COMPRAR</button>
+          <Link href={urlWhatsapp} target="_blank">
+            COMPRAR
+          </Link>
           <div className={styles.wrapperPayment}>
             <label className={styles.labelPayment}>Método de pago</label>
             <Link href="https://www.yape.com.co/">

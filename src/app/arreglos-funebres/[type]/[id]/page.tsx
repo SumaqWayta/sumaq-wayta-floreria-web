@@ -1,4 +1,5 @@
 import SliderImage from "@/components/slider-images/slider-image";
+import { socialNetworks } from "@/data/social-networks";
 import { getFuneralFlowerByName, getRandomFuneralFlowers } from "@/lib/data";
 import { FuneralFlowerTypes } from "@/types/flower";
 import { Metadata } from "next";
@@ -74,6 +75,11 @@ export default async function FuneralFlowerPage({
     return notFound();
   }
 
+  const messageWhatsapp = `¡Hola! Me interesa el arreglo fúnebre tipo ${flower.name.toLocaleLowerCase()} - ${
+    flower.id
+  } de S/ ${flower.price}. ¿Está disponible?`;
+  const urlWhatsapp = `${socialNetworks.whatsapp}?text=${messageWhatsapp}`;
+
   return (
     <div className={styles.page}>
       <h1>
@@ -90,7 +96,9 @@ export default async function FuneralFlowerPage({
           </ul>
         </div>
         <div className={styles.wrapperBuy}>
-          <button>COMPRAR</button>
+          <Link href={urlWhatsapp} target="_blank">
+            COMPRAR
+          </Link>
           <div className={styles.wrapperPayment}>
             <label className={styles.labelPayment}>Método de pago</label>
             <Link href="https://www.yape.com.co/">

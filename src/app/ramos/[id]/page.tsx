@@ -1,4 +1,5 @@
 import SliderImage from "@/components/slider-images/slider-image";
+import { socialNetworks } from "@/data/social-networks";
 import { getBouquetById, getRandomBouquets } from "@/lib/data";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -10,7 +11,6 @@ interface Params {
   id: string;
 }
 
-// Implementación de los metadatos en español
 export async function generateMetadata({
   params,
 }: {
@@ -72,6 +72,11 @@ export default async function BouquetPage({
     return notFound();
   }
 
+  const messageWhatsapp = `¡Hola! Me interesa el ${flower.name.toLocaleLowerCase()} - ${
+    flower.id
+  } de S/ ${flower.price}. ¿Está disponible?`;
+  const urlWhatsapp = `${socialNetworks.whatsapp}?text=${messageWhatsapp}`;
+
   return (
     <div className={styles.page}>
       <h1>
@@ -88,17 +93,17 @@ export default async function BouquetPage({
           </ul>
         </div>
         <div className={styles.wrapperBuy}>
-          <button>COMPRAR</button>
+          <Link href={urlWhatsapp} target="_blank">
+            COMPRAR
+          </Link>
           <div className={styles.wrapperPayment}>
             <label className={styles.labelPayment}>Método de pago</label>
-            <Link href="https://www.yape.com.co/">
-              <Image
-                src="/images/yape.webp"
-                alt="yape"
-                width={100}
-                height={100}
-              />
-            </Link>
+            <Image
+              src="/images/yape.webp"
+              alt="yape"
+              width={100}
+              height={100}
+            />
           </div>
         </div>
       </div>
