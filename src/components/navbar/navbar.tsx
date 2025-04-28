@@ -3,12 +3,13 @@
 import ShoppingCartSVG from "@/assets/icons/shopping-cart";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ButtonHamburger, Sidebar } from "./components";
 import styles from "./navbar.module.css";
 
 export const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
+  const [flowersCount, setFlowersCount] = useState(0);
 
   const changeShowSidebar = () => {
     if (showSidebar) {
@@ -24,6 +25,11 @@ export const Navbar = () => {
     document.body.style.overflow = "auto";
   };
 
+  useEffect(() => {
+    const flowers = JSON.parse(localStorage.getItem("flowers-car") || "[]");
+    setFlowersCount(flowers.length || 0);
+  }, []);
+
   return (
     <>
       <header className={styles.wrapperNavbar}>
@@ -38,7 +44,10 @@ export const Navbar = () => {
             <Link href="/arreglos-florales">Arreglos Florales</Link>
             <Link href="/ramos">Ramos</Link>
           </nav>
-          <Link href="/carro" onClick={closeSidebar}>
+          <Link href="/carro" onClick={closeSidebar} className={styles.cart}>
+            {flowersCount > 0 && (
+              <span className={styles.badgeCount}>{flowersCount}</span>
+            )}
             <ShoppingCartSVG fill="var(--main-color)" width={36} height={36} />
           </Link>
         </div>
