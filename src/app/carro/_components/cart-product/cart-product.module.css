@@ -1,0 +1,141 @@
+.container {
+  display: grid;
+  gap: 1rem;
+  width: min(100% - 2rem, 520px);
+  padding: 1rem;
+  background-color: var(--background-color, #fff);
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: var(--rounded-lg);
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: var(--rounded-md);
+  background-color: var(--white);
+  padding: 0.25rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  color: var(--main-color);
+  font-weight: var(--font-semibold);
+  font-size: var(--text-lg);
+  margin: 0;
+}
+
+.unitPrice {
+  color: var(--secondary-color, #6b7280);
+  font-size: var(--text-sm, 0.875rem);
+  margin: 0;
+}
+
+.content {
+  display: grid;
+  gap: 1rem;
+}
+
+.selectWrapper {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.label {
+  color: var(--main-color);
+  font-weight: var(--font-semibold);
+  font-size: var(--text-sm, 0.875rem);
+}
+
+.select {
+  padding: 0.4rem 1rem;
+  border-radius: var(--rounded-md);
+  border: 1px solid var(--main-color);
+  font-size: var(--text-sm, 0.875rem);
+  background-color: var(--background-color, #fff);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: min(100%, 100px);
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--main-color);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--secondary-color, #6b7280);
+  font-size: var(--text-sm, 0.875rem);
+}
+
+.totalPrice span:first-child {
+  font-weight: var(--font-medium, 500);
+}
+
+.totalPrice span:last-child {
+  font-weight: var(--font-bold, 700);
+  color: var(--main-color);
+}
+
+.removeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--main-color);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  color: var(--white);
+  font-weight: var(--font-semibold);
+}
+
+/* Responsive */
+@media (width >= 28rem) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+
+    .totalPrice {
+      align-self: end;
+      justify-content: flex-end;
+      gap: 0.5rem;
+    }
+  }
+}
+
+@media (width >= 40rem) {
+  .removeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    & > span {
+      display: none;
+    }
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  .image {
+    width: 70px;
+    height: 70px;
+  }
+}

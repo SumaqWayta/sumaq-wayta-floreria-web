@@ -1,0 +1,12 @@
+.page {
+  padding: 3rem 1rem;
+  display: grid;
+  width: min(100% - 20px, var(--max-width));
+  margin: 0 auto;
+  gap: 2rem;
+
+  & > h1 {
+    font-size: clamp(var(--text-2xl), 4vw, var(--text-4xl));
+    font-weight: var(--font-semibold);
+  }
+}
