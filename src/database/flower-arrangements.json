@@ -5,9 +5,9 @@
     "url": "/flowers/flower-arrangements/arrangement-1.svg",
     "link": "/arreglos-florales/1",
     "content": [
-      "8 Rosas",
-      "2 Girasoles",
-      "2 Gerberas",
+      "Rosas",
+      "Girasoles",
+      "Gerberas",
       "Claveles",
       "Aleli",
       "Follaje fino"
@@ -20,8 +20,8 @@
     "url": "/flowers/flower-arrangements/arrangement-2.svg",
     "link": "/arreglos-florales/2",
     "content": [
-      "6 Rosas",
-      "2 Gerberas",
+      "Rosas",
+      "Gerberas",
       "Astromelias",
       "Claveles",
       "Imperico",
@@ -35,8 +35,8 @@
     "url": "/flowers/flower-arrangements/arrangement-3.svg",
     "link": "/arreglos-florales/3",
     "content": [
-      "4 Girasoles",
-      "6 Rosas",
+      "Girasoles",
+      "Rosas",
       "Imperico",
       "Astromelias",
       "Follaje fino"
@@ -49,8 +49,8 @@
     "url": "/flowers/flower-arrangements/arrangement-4.svg",
     "link": "/arreglos-florales/4",
     "content": [
-      "6 Rosas",
-      "4 Girasoles",
+      "Rosas",
+      "Girasoles",
       "Claveles",
       "Verónica",
       "Astromelias",
@@ -64,10 +64,10 @@
     "url": "/flowers/flower-arrangements/arrangement-5.svg",
     "link": "/arreglos-florales/5",
     "content": [
-      "14 Rosas",
-      "3 Gerberas",
-      "3 Girasoles",
-      "3 Ginger",
+      "Rosas",
+      "Gerberas",
+      "Girasoles",
+      "Ginger",
       "Lirio",
       "Aleli",
       "Verónica",
@@ -81,8 +81,8 @@
     "url": "/flowers/flower-arrangements/arrangement-6.svg",
     "link": "/arreglos-florales/6",
     "content": [
-      "6 Rosas",
-      "1 Gerbera",
+      "Rosas",
+      "Gerbera",
       "Astromelias",
       "Claveles",
       "Verónica",
@@ -95,7 +95,7 @@
     "name": "Arreglo Floral",
     "url": "/flowers/flower-arrangements/arrangement-7.svg",
     "link": "/arreglos-florales/7",
-    "content": ["12 Girasoles", "12 Rosas", "Follaje fino"],
+    "content": ["Girasoles", "Rosas", "Follaje fino"],
     "price": "179.90"
   },
   {
@@ -103,7 +103,7 @@
     "name": "Arreglo Floral",
     "url": "/flowers/flower-arrangements/arrangement-8.svg",
     "link": "/arreglos-florales/8",
-    "content": ["12 Rosas", "Astromelias", "Verónica", "Follaje fino"],
+    "content": ["Rosas", "Astromelias", "Verónica", "Follaje fino"],
     "price": "79.90"
   },
   {
@@ -112,10 +112,10 @@
     "url": "/flowers/flower-arrangements/arrangement-9.svg",
     "link": "/arreglos-florales/9",
     "content": [
-      "24 Rosas",
-      "4 Ginger",
-      "3 Lirios",
-      "3 Pico de loro",
+      "Rosas",
+      "Ginger",
+      "Lirios",
+      "Pico de loro",
       "Imperico",
       "Follaje fino"
     ],
@@ -127,9 +127,9 @@
     "url": "/flowers/flower-arrangements/arrangement-10.svg",
     "link": "/arreglos-florales/10",
     "content": [
-      "12 Rosas",
-      "3 Gerberas",
-      "1 Lirio",
+      "Rosas",
+      "Gerberas",
+      "Lirio",
       "Claveles",
       "Hortensia",
       "Iris",
@@ -143,10 +143,10 @@
     "url": "/flowers/flower-arrangements/arrangement-11.svg",
     "link": "/arreglos-florales/11",
     "content": [
-      "12 Rosas",
-      "3 Pico de loro",
-      "2 Gerberas",
-      "1 Lirio",
+      "Rosas",
+      "Pico de loro",
+      "Gerberas",
+      "Lirio",
       "Hortensia",
       "Claveles",
       "Follaje fino"
@@ -158,7 +158,7 @@
     "name": "Arreglo Floral",
     "url": "/flowers/flower-arrangements/arrangement-12.svg",
     "link": "/arreglos-florales/12",
-    "content": ["35 Rosas", "4 Lirios", "Follaje fino"],
+    "content": ["Rosas", "Lirios", "Follaje fino"],
     "price": "244.90"
   },
   {
@@ -167,10 +167,10 @@
     "url": "/flowers/flower-arrangements/arrangement-13.svg",
     "link": "/arreglos-florales/13",
     "content": [
-      "20 Rosas",
-      "4 Ginger",
-      "3 Lirios",
-      "2 Ginger",
+      "Rosas",
+      "Ginger",
+      "Lirios",
+      "Ginger",
       "Imperico",
       "Follaje fino"
     ],
@@ -182,11 +182,11 @@
     "url": "/flowers/flower-arrangements/arrangement-14.svg",
     "link": "/arreglos-florales/14",
     "content": [
-      "7 Rosas",
-      "4 Pico de loro",
-      "2 Girasoles",
-      "3 Gerberas",
-      "1 Lirio",
+      "Rosas",
+      "Pico de loro",
+      "Girasoles",
+      "Gerberas",
+      "Lirio",
       "Pata de canguro",
       "Follaje fino"
     ],
@@ -198,10 +198,10 @@
     "url": "/flowers/flower-arrangements/arrangement-15.svg",
     "link": "/arreglos-florales/15",
     "content": [
-      "18 Rosas",
-      "2 Girasoles",
-      "2 Gerberas",
-      "1 Lirio",
+      "Rosas",
+      "Girasoles",
+      "Gerberas",
+      "Lirio",
       "Claveles",
       "Verónica",
       "Follaje fino"
@@ -213,7 +213,7 @@
     "name": "Arreglo Floral",
     "url": "/flowers/flower-arrangements/arrangement-16.svg",
     "link": "/arreglos-florales/16",
-    "content": ["24 Rosas", "4 Lirios", "Astromelias", "Follaje fino"],
+    "content": ["Rosas", "Lirios", "Astromelias", "Follaje fino"],
     "price": "229.90"
   },
   {
