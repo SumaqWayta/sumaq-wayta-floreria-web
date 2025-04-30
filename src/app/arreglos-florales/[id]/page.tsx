@@ -1,3 +1,8 @@
+import CarShoppingSVG from "@/assets/icons/car-shopping";
+import CreditCard from "@/assets/icons/credit-card";
+import PictureSVG from "@/assets/icons/picture";
+import StarShineSVG from "@/assets/icons/star-shine";
+import VerifiedSVG from "@/assets/icons/verified";
 import SliderImage from "@/components/slider-images/slider-image";
 import { socialNetworks } from "@/data/social-networks";
 import {
@@ -111,6 +116,31 @@ export default async function FlowerArrangementPage({
               />
             </Link>
           </div>
+        </div>
+        <div className={styles.descriptionService}>
+          <h2>Descripción del servicio</h2>
+          <ul className={styles.listServices}>
+            <li>
+              <PictureSVG fill="var(--main-color)" /> Incluye tu dedicatoria
+              personalizada y tarjeta de cuidados
+            </li>
+            <li>
+              <StarShineSVG fill="var(--main-color)" /> Producto exclusivo de
+              SumaqWayta
+            </li>
+            <li>
+              <CarShoppingSVG fill="var(--main-color)" />
+              Delivery a Lima y Callao
+            </li>
+            <li>
+              <CreditCard fill="var(--main-color)" />
+              Pago con tarjeta, transferencia, Yape o Plin
+            </li>
+            <li>
+              <VerifiedSVG fill="var(--main-color)" />
+              Calidad 100% garantizada
+            </li>
+          </ul>
         </div>
       </div>
       <div className={styles.wrapperSlider}>

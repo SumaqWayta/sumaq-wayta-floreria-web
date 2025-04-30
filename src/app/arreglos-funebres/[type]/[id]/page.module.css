@@ -39,6 +39,27 @@
   }
 }
 
+.descriptionService {
+  display: grid;
+  gap: 0.5rem;
+
+  & > h2 {
+    font-weight: var(--font-bold);
+    font-size: var(--text-lg);
+  }
+}
+
+.listServices {
+  display: grid;
+  font-size: var(--text-base);
+  gap: 0.5rem;
+
+  & li {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
 .listContent {
   display: flex;
   flex-direction: column;

@@ -27,6 +27,27 @@
   gap: 1rem;
 }
 
+.descriptionService {
+  display: grid;
+  gap: 0.5rem;
+
+  & > h2 {
+    font-weight: var(--font-bold);
+    font-size: var(--text-lg);
+  }
+}
+
+.listServices {
+  display: grid;
+  font-size: var(--text-base);
+  gap: 0.5rem;
+
+  & li {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -76,18 +97,6 @@
   align-items: center;
   margin: 0 auto;
   padding-top: 1rem;
-
-  & > a {
-    width: min(100%, 200px);
-    justify-self: center;
-    color: white;
-    text-align: center;
-    background-color: var(--main-color);
-    font-weight: var(--font-semibold);
-    padding: 0.5rem 1rem;
-    font-size: var(--text-lg);
-    border-radius: var(--rounded-xl);
-  }
 }
 
 .labelPayment {
