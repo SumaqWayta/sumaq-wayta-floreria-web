@@ -22,7 +22,13 @@ export function ProductFlower({
   return (
     <li className={styles.wrapper}>
       <Link href={link}>
-        <Image src={url} alt={`image ${name} ${id}`} width={200} height={200} />
+        <Image
+          key={url}
+          src={url}
+          alt={`image ${name} ${id}`}
+          width={200}
+          height={200}
+        />
         <div className={styles.description}>
           <h3>
             # {name} {id}
