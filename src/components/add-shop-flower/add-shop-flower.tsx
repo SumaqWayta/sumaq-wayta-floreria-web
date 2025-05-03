@@ -1,6 +1,7 @@
 "use client";
 
-import { FLOWER, FLOWER_CAR } from "@/types/flower";
+import { useFlowerCartStore } from "@/store/use-store-flowers";
+import { FLOWER } from "@/types/flower";
 import { useEffect, useState } from "react";
 import styles from "./add-shop-flower.module.css";
 
@@ -10,22 +11,20 @@ interface AddShopFlowerProps {
 
 export function AddShopFlower({ flower }: AddShopFlowerProps) {
   const MAX_ITEMS = 20;
+  const itemId = `${flower.name}-${flower.id}`;
+  const { flowersCar, setFlower, removeFlower } = useFlowerCartStore();
 
+  const flowerInCart = flowersCar.find((item) => item.id === itemId);
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    const flowersCar = localStorage.getItem("flowers-car") || "[]";
-    const formatFlowersCar: FLOWER_CAR[] = JSON.parse(flowersCar);
-    const currentFlower = formatFlowersCar.find(
-      (car) => car.id === `${flower.name}-${flower.id}`
-    );
-    if (currentFlower) {
-      setCount(currentFlower.count);
+    if (flowerInCart) {
+      setCount(flowerInCart.count);
     }
-  }, [flower.id, flower.name]);
+  }, [flowerInCart]);
 
   const addCount = () => {
-    if (count >= 20) return;
+    if (count >= MAX_ITEMS) return;
     setCount((prev) => prev + 1);
   };
 
@@ -35,45 +34,28 @@ export function AddShopFlower({ flower }: AddShopFlowerProps) {
   };
 
   const addShop = () => {
-    const flowersCar = localStorage.getItem("flowers-car") || "[]";
-    const formatFlowersCar: FLOWER_CAR[] = JSON.parse(flowersCar);
-    const newItemId = `${flower.name}-${flower.id}`;
-
-    const existingIndex = formatFlowersCar.findIndex(
-      (item) => item.id === newItemId
-    );
-
-    let newFlowersCar;
-
-    if (existingIndex !== -1) {
-      formatFlowersCar[existingIndex].count = count;
-      newFlowersCar = [...formatFlowersCar];
-    } else {
-      newFlowersCar = [
-        ...formatFlowersCar,
-        {
-          id: newItemId,
-          price: flower.price,
-          count,
-          image: flower.url,
-        },
-      ];
+    if (count === 0) {
+      removeFlower(itemId);
+      return;
     }
 
-    localStorage.setItem("flowers-car", JSON.stringify(newFlowersCar));
+    setFlower({
+      id: itemId,
+      price: parseFloat(flower.price),
+      count,
+      image: flower.url,
+    });
   };
 
   return (
-    <>
-      <div className={styles.container}>
-        <div className={styles.wrapperCount}>
-          <button onClick={restCount}>-</button>
-          <span>{count}</span>
-          <button onClick={addCount}>+</button>
-        </div>
-        <p>Máximo {MAX_ITEMS}</p>
-        <button onClick={addShop}>Agregar carrito</button>
+    <div className={styles.container}>
+      <div className={styles.wrapperCount}>
+        <button onClick={restCount}>-</button>
+        <span>{count}</span>
+        <button onClick={addCount}>+</button>
       </div>
-    </>
+      <p>Máximo {MAX_ITEMS}</p>
+      <button onClick={addShop}>Agregar carrito</button>
+    </div>
   );
 }

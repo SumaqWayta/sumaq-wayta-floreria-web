@@ -1,7 +1,7 @@
 import CloseSVG from "@/assets/icons/close";
-import { FLOWER_CAR } from "@/types/flower";
+import { useFlowerCartStore } from "@/store/use-store-flowers";
 import Image from "next/image";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent } from "react";
 import styles from "./cart-product.module.css";
 
 interface CartProductProps {
@@ -9,43 +9,29 @@ interface CartProductProps {
   price: number;
   count: number;
   image: string;
-  updateFlowers: (flowers: FLOWER_CAR[]) => void;
 }
 
 export default function CartProduct({
   id,
   price,
-  count: initialCount,
+  count,
   image,
-  updateFlowers,
 }: CartProductProps) {
-  const [count, setCount] = useState<number>(initialCount);
+  const { setFlower, removeFlower } = useFlowerCartStore();
 
   const handleCountChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    setCount(Number(event.target.value));
-    const flowersCar = localStorage.getItem("flowers-car") || "[]";
-    const formatFlowersCar: FLOWER_CAR[] = JSON.parse(flowersCar);
-    const newFlowersCar = formatFlowersCar.map((flower) => {
-      if (flower.id === id) {
-        return {
-          ...flower,
-          count: Number(event.target.value),
-        };
-      }
-      return flower;
+    const newCount = Number(event.target.value);
+    setFlower({
+      id,
+      price,
+      count: newCount,
+      image,
     });
-    localStorage.setItem("flowers-car", JSON.stringify(newFlowersCar));
-    updateFlowers(newFlowersCar);
   };
-
   const totalPrice = (count * price).toFixed(2);
 
   const handleRemove = () => {
-    const flowersCar = localStorage.getItem("flowers-car") || "[]";
-    const formatFlowersCar: FLOWER_CAR[] = JSON.parse(flowersCar);
-    const newFlowersCar = formatFlowersCar.filter((flower) => flower.id !== id);
-    localStorage.setItem("flowers-car", JSON.stringify(newFlowersCar));
-    updateFlowers(newFlowersCar);
+    removeFlower(id);
   };
 
   return (

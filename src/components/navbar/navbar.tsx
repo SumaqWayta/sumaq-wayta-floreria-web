@@ -1,15 +1,16 @@
 "use client";
 
 import ShoppingCartSVG from "@/assets/icons/shopping-cart";
+import { useFlowerCartStore } from "@/store/use-store-flowers";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ButtonHamburger, Sidebar } from "./components";
 import styles from "./navbar.module.css";
 
 export const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
-  const [flowersCount, setFlowersCount] = useState(0);
+  const { flowersCar } = useFlowerCartStore();
 
   const changeShowSidebar = () => {
     if (showSidebar) {
@@ -25,10 +26,7 @@ export const Navbar = () => {
     document.body.style.overflow = "auto";
   };
 
-  useEffect(() => {
-    const flowers = JSON.parse(localStorage.getItem("flowers-car") || "[]");
-    setFlowersCount(flowers.length || 0);
-  }, []);
+  const flowersCount = flowersCar.length;
 
   return (
     <>
