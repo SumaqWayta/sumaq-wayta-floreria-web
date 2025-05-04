@@ -53,6 +53,7 @@
   display: grid;
   font-size: var(--text-base);
   gap: 0.5rem;
+  color: var(--main-color);
 
   & li {
     display: flex;
@@ -114,7 +115,7 @@
 .labelPayment {
   white-space: nowrap;
   position: absolute;
-  background-color: var(--white);
+  background-color: var(--background-color);
   top: -15px;
   left: 50%;
   padding: 0 1rem;
@@ -124,6 +125,12 @@
   font-size: var(--text-lg);
   font-weight: var(--font-semibold);
   transform: translateX(-50%);
+}
+
+@media (width >= 48rem) {
+  .listServices {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (width >= 64rem) {
@@ -138,6 +145,10 @@
       grid-column: 2 span;
       place-self: center;
     }
+  }
+
+  .descriptionService {
+    grid-column: 3 span;
   }
 
   .description {
@@ -157,12 +168,4 @@
     grid-column: 3 span;
     width: 100%;
   }
-}
-
-@media (width >= 80rem) {
-  /* Extra Large devices (xl) - >= 80rem (>= 1280px) */
-}
-
-@media (width >= 96rem) {
-  /* 2XL devices (2xl) - >= 96rem (>= 1536px) */
 }

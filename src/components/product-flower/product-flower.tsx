@@ -30,9 +30,7 @@ export function ProductFlower({
           height={200}
         />
         <div className={styles.description}>
-          <h3>
-            # {name} {id}
-          </h3>
+          <h3>{`${name} # ${String(id).padStart(3, "0")}`}</h3>
           <p>S/ {price}</p>
           <p>{type}</p>
         </div>

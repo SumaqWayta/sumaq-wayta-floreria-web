@@ -114,7 +114,7 @@
 .labelPayment {
   white-space: nowrap;
   position: absolute;
-  background-color: var(--white);
+  background-color: var(--background-color);
   top: -15px;
   left: 50%;
   padding: 0 1rem;
