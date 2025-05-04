@@ -18,3 +18,10 @@ export interface FLOWER {
   content: string[];
   edition?: string;
 }
+
+export interface FLOWER_CAR {
+  id: string;
+  price: number;
+  count: number;
+  image: string;
+}

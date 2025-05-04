@@ -41,5 +41,5 @@
 }
 
 .wrapperButton[aria-expanded="true"] div:last-child {
-  transform: translate(0, -11px) rotate(45deg);
+  transform: translate(0, -11px) rotate(-45deg);
 }

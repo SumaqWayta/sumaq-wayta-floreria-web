@@ -1,5 +1,7 @@
 "use client";
 
+import ShoppingCartSVG from "@/assets/icons/shopping-cart";
+import { useFlowerCartStore } from "@/store/use-store-flowers";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -8,6 +10,7 @@ import styles from "./navbar.module.css";
 
 export const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
+  const { flowersCar } = useFlowerCartStore();
 
   const changeShowSidebar = () => {
     if (showSidebar) {
@@ -18,10 +21,19 @@ export const Navbar = () => {
     setShowSidebar(!showSidebar);
   };
 
+  const closeSidebar = () => {
+    setShowSidebar(false);
+    document.body.style.overflow = "auto";
+  };
+
+  const flowersCount = flowersCar.length;
+
   return (
     <>
+      <p className={styles.contact}>Contactarme al +51992776777</p>
       <header className={styles.wrapperNavbar}>
         <div className={styles.container}>
+          <ButtonHamburger value={showSidebar} onClick={changeShowSidebar} />
           <Link href="/">
             <Image src="/svg/logo.svg" alt="Logo" width={100} height={70.7} />
           </Link>
@@ -31,7 +43,12 @@ export const Navbar = () => {
             <Link href="/arreglos-florales">Arreglos Florales</Link>
             <Link href="/ramos">Ramos</Link>
           </nav>
-          <ButtonHamburger value={showSidebar} onClick={changeShowSidebar} />
+          <Link href="/carro" onClick={closeSidebar} className={styles.cart}>
+            {flowersCount > 0 && (
+              <span className={styles.badgeCount}>{flowersCount}</span>
+            )}
+            <ShoppingCartSVG fill="var(--main-color)" width={36} height={36} />
+          </Link>
         </div>
       </header>
       <Sidebar value={showSidebar} onClose={changeShowSidebar} />

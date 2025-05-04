@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  & > p {
+    color: gray;
+    font-weight: var(--font-semibold);
+    letter-spacing: 0.5;
+    font-size: var(--text-sm);
+    text-align: center;
+  }
+
+  & > button {
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    font-size: var(--text-lg);
+    border-radius: var(--rounded-xl);
+    font-weight: var(--font-semibold);
+  }
+}
+
+.wrapperCount {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-lg);
+  color: var(--main-color);
+
+  & > button {
+    font-weight: var(--font-semibold);
+    width: 2rem;
+    height: 2rem;
+    background-color: inherit;
+    border: 2px solid var(--main-color);
+    border-radius: var(--rounded-md);
+  }
+
+  & > span {
+    font-size: var(--text-xl);
+    min-width: 30px;
+    text-align: center;
+  }
+}

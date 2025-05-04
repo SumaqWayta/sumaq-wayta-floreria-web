@@ -1,3 +1,12 @@
+.contact {
+  text-align: center;
+  background-color: var(--main-color);
+  font-weight: var(--font-semibold);
+  color: var(--white);
+  font-size: var(--text-lg);
+  padding: 1rem 0;
+}
+
 .wrapperNavbar {
   display: flex;
   justify-content: center;
@@ -11,6 +20,7 @@
   align-items: center;
   width: min(100% - 20px, var(--max-width));
   z-index: 4;
+  padding: 0 0.5rem;
 
   & > a > img {
     width: 100px;
@@ -28,6 +38,24 @@
     font-weight: var(--font-semibold);
     color: var(--main-color);
   }
+}
+
+.cart {
+  position: relative;
+}
+
+.badgeCount {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: var(--main-color);
+  color: var(--white);
+  border-radius: var(--rounded-full);
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-content: center;
+  font-size: var(--text-xs);
 }
 
 @media (min-width: 48rem) {

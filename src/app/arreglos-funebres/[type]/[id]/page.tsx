@@ -1,5 +1,10 @@
+import CarShoppingSVG from "@/assets/icons/car-shopping";
+import CreditCard from "@/assets/icons/credit-card";
+import PictureSVG from "@/assets/icons/picture";
+import StarShineSVG from "@/assets/icons/star-shine";
+import VerifiedSVG from "@/assets/icons/verified";
+import { AddShopFlower } from "@/components";
 import SliderImage from "@/components/slider-images/slider-image";
-import { socialNetworks } from "@/data/social-networks";
 import { getFuneralFlowerByName, getRandomFuneralFlowers } from "@/lib/data";
 import { FuneralFlowerTypes } from "@/types/flower";
 import { Metadata } from "next";
@@ -75,15 +80,10 @@ export default async function FuneralFlowerPage({
     return notFound();
   }
 
-  const messageWhatsapp = `¡Hola! Me interesa el arreglo fúnebre tipo ${flower.name.toLocaleLowerCase()} - ${
-    flower.id
-  } de S/ ${flower.price}. ¿Está disponible?`;
-  const urlWhatsapp = `${socialNetworks.whatsapp}?text=${messageWhatsapp}`;
-
   return (
     <div className={styles.page}>
       <h1>
-        {flower.name} - {flower.id}
+        Arreglo fúnebre - {flower.name} - {flower.id}
       </h1>
       <Image src={flower.url} alt={flower.name} width={500} height={500} />
       <div className={styles.description}>
@@ -96,9 +96,7 @@ export default async function FuneralFlowerPage({
           </ul>
         </div>
         <div className={styles.wrapperBuy}>
-          <Link href={urlWhatsapp} target="_blank">
-            COMPRAR
-          </Link>
+          <AddShopFlower flower={flower} />
           <div className={styles.wrapperPayment}>
             <label className={styles.labelPayment}>Método de pago</label>
             <Link href="https://www.yape.com.co/">
@@ -111,6 +109,31 @@ export default async function FuneralFlowerPage({
             </Link>
           </div>
         </div>
+      </div>
+      <div className={styles.descriptionService}>
+        <h2>Beneficios de tu compra</h2>
+        <ul className={styles.listServices}>
+          <li>
+            <PictureSVG fill="var(--main-color)" /> Incluye tu dedicatoria
+            personalizada y tarjeta de cuidados
+          </li>
+          <li>
+            <StarShineSVG fill="var(--main-color)" /> Producto exclusivo de
+            SumaqWayta
+          </li>
+          <li>
+            <CarShoppingSVG fill="var(--main-color)" />
+            Delivery a Lima y Callao
+          </li>
+          <li>
+            <CreditCard fill="var(--main-color)" />
+            Pago con tarjeta, transferencia, Yape o Plin
+          </li>
+          <li>
+            <VerifiedSVG fill="var(--main-color)" />
+            Calidad 100% garantizada
+          </li>
+        </ul>
       </div>
       <div className={styles.wrapperSlider}>
         <SliderImage data={randomFlowers} />

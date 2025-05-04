@@ -31,7 +31,7 @@
     display: block;
   }
 
-  & > span:nth-child(2) {
+  & > a {
     padding: 0.2rem 0.7rem;
     background-color: var(--secondary-color);
     color: #fff;
