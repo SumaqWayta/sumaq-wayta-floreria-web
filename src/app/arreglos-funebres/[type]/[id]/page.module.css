@@ -54,6 +54,7 @@
   font-size: var(--text-base);
   gap: 0.5rem;
   color: var(--main-color);
+  padding-bottom: 1rem;
 
   & li {
     display: flex;
@@ -153,6 +154,7 @@
 
   .description {
     flex-direction: column;
+    min-height: 35rem;
   }
 
   .content {
