@@ -23,43 +23,29 @@ export function SliderFlowers({ data, redirect }: SliderFlowersProps) {
 
     const handleScroll = () => {
       requestAnimationFrame(() => {
+        const slider = sliderRef.current;
+        if (!slider) return;
+
         const items = slider.querySelectorAll<HTMLElement>("[data-item]");
-        const scrollLeft = slider.scrollLeft;
-        const isWideScreen = window.innerWidth >= 1024;
+        const sliderWidth = slider.offsetWidth;
+        const sliderLeft = slider.getBoundingClientRect().left;
 
-        if (isWideScreen) {
-          const containerCenter = scrollLeft + slider.offsetWidth / 2;
-          let closestIndex = 0;
-          let closestDistance = Infinity;
+        let closestIndex = 0;
+        let closestDistance = Infinity;
 
-          items.forEach((item, i) => {
-            const itemCenter = item.offsetLeft + item.offsetWidth / 2;
-            const distance = Math.abs(containerCenter - itemCenter);
-            if (distance < closestDistance) {
-              closestDistance = distance;
-              closestIndex = i;
-            }
-          });
+        items.forEach((item, i) => {
+          const itemRect = item.getBoundingClientRect();
+          const itemCenter = itemRect.left + itemRect.width / 2;
+          const sliderCenter = sliderLeft + sliderWidth / 2;
+          const distance = Math.abs(itemCenter - sliderCenter);
 
-          setActiveIndex(closestIndex);
-        } else {
-          // 📱 Mejora para móviles: detectar ítem más visible en pantalla
-          let minOffset = Infinity;
-          let visibleIndex = 0;
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closestIndex = i;
+          }
+        });
 
-          items.forEach((item, i) => {
-            const itemLeft = item.getBoundingClientRect().left;
-            const sliderLeft = slider.getBoundingClientRect().left;
-            const distanceToLeft = Math.abs(itemLeft - sliderLeft);
-
-            if (distanceToLeft < minOffset) {
-              minOffset = distanceToLeft;
-              visibleIndex = i;
-            }
-          });
-
-          setActiveIndex(visibleIndex);
-        }
+        setActiveIndex(closestIndex);
       });
     };
 
