@@ -1,0 +1,70 @@
+.container {
+  display: grid;
+  padding: 1.5rem;
+  background-color: var(--background-color, #fff);
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: var(--rounded-lg);
+  box-shadow: var(--shadow-md);
+  width: min(100% - 2rem, 500px);
+  min-height: 550px;
+  gap: 1rem;
+  align-self: self-start;
+  grid-template-rows: auto 1fr auto;
+}
+
+.stepper {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+
+.step {
+  width: 30px;
+  height: 30px;
+  border-radius: var(--rounded-full);
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-bold);
+  color: #555;
+  transition: background-color 0.3s;
+}
+
+.step.active {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.step.completed {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.important {
+  color: #666;
+  font-size: var(--text-sm);
+
+  & span {
+    font-weight: var(--font-bold);
+  }
+}
+
+.footer {
+  display: grid;
+  gap: 1rem;
+  align-self: self-end;
+}
+
+.note {
+  font-size: var(--text-sm);
+  color: #666;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.note a {
+  text-decoration: underline;
+  color: var(--secondary-color);
+  cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.wrapperInput {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.label {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--main-color);
+}
+
+.input {
+  padding: 0.5rem;
+  border: 1px solid var(--main-color);
+  border-radius: var(--rounded-md);
+  font-size: var(--text-sm);
+  outline: none;
+  color: var(--main-color);
+}

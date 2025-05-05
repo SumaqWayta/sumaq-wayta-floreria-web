@@ -3,7 +3,7 @@ import styles from "./cart-products-list.module.css";
 
 import { useFlowerCartStore } from "@/store/use-store-flowers";
 import CartProduct from "../cart-product/cart-product";
-import PurchaseSummary from "../purchase-summary/purchase-summary";
+import PurchaseForm from "../purchase-form/purchase-form";
 
 export default function CartProductsList() {
   const { flowersCar } = useFlowerCartStore();
@@ -28,7 +28,7 @@ export default function CartProductsList() {
               />
             ))}
           </ul>
-          <PurchaseSummary total={flowersTotal || 0} />
+          <PurchaseForm total={flowersTotal || 0} />
         </>
       )}
       {flowersCar?.length === 0 && (

@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  gap: 1rem;
+}
+
+.title {
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+  color: var(--main-color);
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+
+  & > button {
+    flex: 1;
+    color: var(--white);
+    font-weight: var(--font-semibold);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 0.8rem 0.5rem;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}

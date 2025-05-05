@@ -1,0 +1,64 @@
+.container {
+  display: grid;
+  gap: 1rem;
+
+  & > p {
+    color: var(--main-color);
+    justify-self: self-start;
+  }
+}
+
+.title {
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+  color: var(--main-color);
+}
+
+.options {
+  display: grid;
+  gap: 1rem;
+  height: 10rem;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  & > label {
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    color: var(--main-color);
+  }
+
+  & > input {
+    cursor: pointer;
+    accent-color: var(--main-color);
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  align-items: self-end;
+
+  & > button {
+    flex: 1;
+    color: var(--white);
+    font-weight: var(--font-semibold);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 0.8rem 0.5rem;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}
