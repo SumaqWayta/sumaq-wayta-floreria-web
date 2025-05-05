@@ -1,3 +1,4 @@
+import BookSVG from "@/assets/icons/book";
 import { socialNetworks } from "@/data/social-networks";
 import Image from "next/image";
 import Link from "next/link";
@@ -116,6 +117,9 @@ export const Footer = () => {
         </div>
       </div>
       <div className={styles.copyright}>
+        <a href="/" target="_blank" rel="noopener noreferrer">
+          <BookSVG /> Libro de Reclamaciones
+        </a>
         <p>© 2025 Sumaq Wayta. Todos los derechos reservados.</p>
       </div>
     </footer>

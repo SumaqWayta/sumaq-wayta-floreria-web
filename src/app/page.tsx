@@ -58,7 +58,7 @@ export default function Home() {
         <PersonalizedFlowerCarousel />
       </div>
       <Divider />
-      <div className={styles.containerFlowersDetails}>
+      {/* <div className={styles.containerFlowersDetails}>
         <h2>Encuentra el detalle Perfecto</h2>
         <div className={styles.listDetailsFlowers}>
           <div></div>
@@ -68,7 +68,7 @@ export default function Home() {
           <div></div>
           <div></div>
         </div>
-      </div>
+      </div> */}
       <Image
         src="/images/image-footer.svg"
         width={500}

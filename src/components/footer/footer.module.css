@@ -59,10 +59,22 @@
 
 .copyright {
   width: 100%;
+  display: grid;
   text-align: center;
   padding: 0.5rem 0;
+  gap: 0.5rem;
   background-color: var(--main-color);
   color: var(--white);
+
+  & > a {
+    display: flex;
+    justify-self: center;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    cursor: pointer;
+  }
 }
 
 @media (width >= 38rem) {
@@ -78,6 +90,14 @@
 @media (width >= 48rem) {
   .footer {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .copyright {
+    grid-template-columns: 1fr 1fr;
+
+    & > a {
+      order: 2;
+    }
   }
 
   .logo {

@@ -30,7 +30,13 @@ export const Navbar = () => {
 
   return (
     <>
-      <p className={styles.contact}>Contactarme al +51992776777</p>
+      <a
+        className={styles.contact}
+        target="_blank"
+        href="https://wa.me/51992776777?text=Hola, quisiera información"
+      >
+        Contactarme al +51992776777
+      </a>
       <header className={styles.wrapperNavbar}>
         <div className={styles.container}>
           <ButtonHamburger value={showSidebar} onClick={changeShowSidebar} />
