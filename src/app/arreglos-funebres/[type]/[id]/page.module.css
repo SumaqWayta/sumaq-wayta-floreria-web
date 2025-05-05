@@ -9,11 +9,25 @@
     font-size: clamp(var(--text-2xl), 5vw, var(--text-4xl));
     font-weight: var(--font-semibold);
   }
+}
+
+.wrapperImage {
+  display: grid;
+  width: min(100% - 20px, 500px);
+  align-content: center;
+  gap: 1rem;
 
   & > img {
     width: min(100%, 500px);
     margin: 0 auto;
     object-fit: cover;
+  }
+
+  & > p {
+    text-align: center;
+    font-size: var(--text-2xl);
+    color: var(--main-color);
+    font-weight: var(--font-extrabold);
   }
 }
 
@@ -141,11 +155,11 @@
     & > h1 {
       grid-column: 3 span;
     }
+  }
 
-    & > img {
-      grid-column: 2 span;
-      place-self: center;
-    }
+  .wrapperImage {
+    grid-column: 2 span;
+    place-self: center;
   }
 
   .descriptionService {

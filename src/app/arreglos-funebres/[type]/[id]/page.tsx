@@ -83,9 +83,12 @@ export default async function FuneralFlowerPage({
   return (
     <div className={styles.page}>
       <h1>
-        Arreglo fúnebre - {flower.name} - {flower.id}
+        Fúnebre - {flower.name} - {flower.id}
       </h1>
-      <Image src={flower.url} alt={flower.name} width={500} height={500} />
+      <div className={styles.wrapperImage}>
+        <Image src={flower.url} alt={flower.name} width={500} height={500} />
+        <p>S/ {flower.price}</p>
+      </div>
       <div className={styles.description}>
         <div className={styles.content}>
           <h2>Contenido</h2>
