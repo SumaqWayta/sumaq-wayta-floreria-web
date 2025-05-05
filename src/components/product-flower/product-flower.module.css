@@ -6,8 +6,8 @@
   transition: all 300ms ease-in-out;
 
   & img {
-    width: 220px;
-    height: 220px;
+    width: 100px;
+    height: 100px;
   }
 
   &:hover {
@@ -25,7 +25,6 @@
   & h3 {
     color: var(--main-color);
     font-weight: var(--font-bold);
-    font-size: var(--text-xl);
   }
 
   & p:nth-child(2) {
@@ -35,5 +34,20 @@
   & p:nth-child(3) {
     font-weight: var(--font-medium);
     color: #b5b5b5;
+  }
+}
+
+@media (width >= 40rem) {
+  .wrapper {
+    & img {
+      width: 240px;
+      height: 240px;
+    }
+  }
+
+  .description {
+    & h3 {
+      font-size: var(--text-xl);
+    }
   }
 }

@@ -24,26 +24,22 @@
 
 .listFlowers {
   display: grid;
-  grid-template-columns: repeat(1, 240px);
+  grid-template-columns: repeat(2, 120px);
   gap: 1rem;
   justify-items: center;
   justify-content: center;
-  grid: 240px;
 }
 
 @media (width >= 40rem) {
   .listFlowers {
-    grid-template-columns: repeat(2, 240px);
+    grid-template-columns: repeat(2, 250px);
     gap: 1rem 3rem;
   }
 }
 
 @media (width >= 80rem) {
   .listFlowers {
-    grid-template-columns: repeat(4, 240px);
+    grid-template-columns: repeat(4, 250px);
     gap: 1rem 4rem;
   }
-}
-
-@media (width >= 96rem) {
 }
