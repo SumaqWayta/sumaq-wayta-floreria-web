@@ -28,6 +28,7 @@ export function ProductFlower({
           alt={`image ${name} ${id}`}
           width={200}
           height={200}
+          loading="lazy"
         />
         <div className={styles.description}>
           <h3>{`${name} # ${String(id).padStart(3, "0")}`}</h3>
