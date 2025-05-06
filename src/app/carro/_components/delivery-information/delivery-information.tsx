@@ -1,11 +1,11 @@
 import { Input } from "@/components/input/input";
+import { FormCar } from "@/types/flower";
 import { Dispatch, SetStateAction } from "react";
-import { Form } from "../purchase-form/purchase-form";
 import styles from "./delivery-information.module.css";
 
 interface DeliveryInformationProps {
-  setForm: Dispatch<SetStateAction<Form>>;
-  form: Form;
+  setForm: Dispatch<SetStateAction<FormCar>>;
+  form: FormCar;
   nextStep: () => void;
   prevStep: () => void;
 }

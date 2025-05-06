@@ -1,11 +1,11 @@
 import { Input } from "@/components/input/input";
+import { FormCar } from "@/types/flower";
 import { Dispatch, SetStateAction } from "react";
-import { Form } from "../purchase-form/purchase-form";
 import styles from "./customer-data-form.module.css";
 
 interface CustomerDataFormProps {
-  setForm: Dispatch<SetStateAction<Form>>;
-  form: Form;
+  setForm: Dispatch<SetStateAction<FormCar>>;
+  form: FormCar;
   nextStep: () => void;
   prevStep: () => void;
 }
@@ -19,7 +19,6 @@ export default function CustomerDataForm({
   const { name, email, phone } = form;
 
   const handleChangeName = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.value === "") return;
     if (e.target.value.length > 100) return;
     setForm((prev) => ({ ...prev, name: e.target.value }));
   };

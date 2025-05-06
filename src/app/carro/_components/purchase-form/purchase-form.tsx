@@ -1,4 +1,8 @@
+import { sendEmail } from "@/services/send-email";
+import { useFlowerCartStore } from "@/store/use-store-flowers";
+import { FLOWER_CAR, FormCar } from "@/types/flower";
 import { useState } from "react";
+import { toast } from "sonner";
 import AdditionalInformation from "../additional-information/additional-information";
 import CustomerDataForm from "../customer-data-form/customer-data-form";
 import DeliveryInformation from "../delivery-information/delivery-information";
@@ -8,20 +12,10 @@ import styles from "./purchase-form.module.css";
 
 interface PurchaseFormProps {
   total: number;
+  flowers: FLOWER_CAR[];
 }
 
-export interface Form {
-  name: string;
-  email: string;
-  phone: string;
-  city: string;
-  address: string;
-  reference: string;
-  paymentMethod: string;
-  additionalInformation: string;
-}
-
-const initialForm: Form = {
+const initialForm: FormCar = {
   name: "",
   email: "",
   phone: "",
@@ -32,13 +26,38 @@ const initialForm: Form = {
   additionalInformation: "",
 };
 
-export default function PurchaseForm({ total }: PurchaseFormProps) {
+export default function PurchaseForm({ total, flowers }: PurchaseFormProps) {
   const STEPS = [1, 2, 3, 4, 5];
   const [step, setStep] = useState(1);
   const [formPurchase, setFormPurchase] = useState(initialForm);
+  const [loading, setLoading] = useState(false);
+  const { clearCart } = useFlowerCartStore();
 
-  const onSubmit = () => {
-    console.log(formPurchase);
+  const flowersData = flowers.map((flower) => ({
+    id: flower.id,
+    url: flower.url,
+    cantidad: flower.count,
+    precio: parseFloat((flower.price * flower.count).toFixed(2)),
+  }));
+
+  const onSubmit = async (token: string | null) => {
+    try {
+      setLoading(true);
+      await sendEmail({
+        ...formPurchase,
+        token,
+        total: parseFloat(total.toFixed(2)),
+        flowers: flowersData,
+      });
+      setLoading(false);
+      clearCart();
+      toast.success(
+        "El pedido se realizo con éxito, un representante se pondrá en contacto con usted"
+      );
+    } catch {
+      setLoading(false);
+      toast.error("Ocurrió un error al realizar el pedido");
+    }
   };
 
   return (
@@ -88,6 +107,7 @@ export default function PurchaseForm({ total }: PurchaseFormProps) {
           form={formPurchase}
           submit={onSubmit}
           prevStep={() => setStep(4)}
+          loading={loading}
         />
       )}
       <div className={styles.footer}>

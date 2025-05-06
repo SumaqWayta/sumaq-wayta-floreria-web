@@ -24,4 +24,29 @@ export interface FLOWER_CAR {
   price: number;
   count: number;
   image: string;
+  url: string;
+}
+
+export interface FormCar {
+  name: string;
+  email: string;
+  phone: string;
+  city: string;
+  address: string;
+  reference: string;
+  paymentMethod: string;
+  additionalInformation: string;
+}
+
+export interface FLOWER_REQUEST {
+  id: string;
+  url: string;
+  cantidad: number;
+  precio: number;
+}
+
+export interface PayloadFormCar extends FormCar {
+  token: string | null;
+  flowers: FLOWER_REQUEST[];
+  total: number;
 }

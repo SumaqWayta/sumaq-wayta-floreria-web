@@ -28,7 +28,7 @@ export default function CartProductsList() {
               />
             ))}
           </ul>
-          <PurchaseForm total={flowersTotal || 0} />
+          <PurchaseForm total={flowersTotal || 0} flowers={flowersCar} />
         </>
       )}
       {flowersCar?.length === 0 && (

@@ -44,6 +44,7 @@ export function AddShopFlower({ flower }: AddShopFlowerProps) {
       price: parseFloat(flower.price),
       count,
       image: flower.url,
+      url: flower.link,
     });
   };
 

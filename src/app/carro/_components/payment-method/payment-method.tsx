@@ -1,12 +1,12 @@
+import { FormCar } from "@/types/flower";
 import { Dispatch, SetStateAction } from "react";
-import { Form } from "../purchase-form/purchase-form";
 import styles from "./payment-method.module.css";
 
 interface PaymentMethodProps {
   nextStep: () => void;
   prevStep: () => void;
-  setForm: Dispatch<SetStateAction<Form>>;
-  form: Form;
+  setForm: Dispatch<SetStateAction<FormCar>>;
+  form: FormCar;
 }
 
 export default function PaymentMethod({
