@@ -25,7 +25,6 @@ export default function AdditionalInformation({
   const handleChangeAdditionalInformation = (
     e: React.ChangeEvent<HTMLTextAreaElement>
   ) => {
-    if (e.target.value === "") return;
     if (e.target.value.length > 200) return;
     setForm((prev) => ({ ...prev, additionalInformation: e.target.value }));
   };

@@ -17,19 +17,16 @@ export default function DeliveryInformation({
   prevStep,
 }: DeliveryInformationProps) {
   const handleChangeCity = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.value === "") return;
     if (e.target.value.length > 100) return;
     setForm((prev) => ({ ...prev, city: e.target.value }));
   };
 
   const handleChangeAddress = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.value === "") return;
     if (e.target.value.length > 200) return;
     setForm((prev) => ({ ...prev, address: e.target.value }));
   };
 
   const handleChangeReference = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.value === "") return;
     if (e.target.value.length > 200) return;
     setForm((prev) => ({ ...prev, reference: e.target.value }));
   };
