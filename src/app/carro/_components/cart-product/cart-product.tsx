@@ -9,6 +9,7 @@ interface CartProductProps {
   price: number;
   count: number;
   image: string;
+  url: string;
 }
 
 export default function CartProduct({
@@ -16,6 +17,7 @@ export default function CartProduct({
   price,
   count,
   image,
+  url,
 }: CartProductProps) {
   const { setFlower, removeFlower } = useFlowerCartStore();
 
@@ -26,6 +28,7 @@ export default function CartProduct({
       price,
       count: newCount,
       image,
+      url,
     });
   };
   const totalPrice = (count * price).toFixed(2);

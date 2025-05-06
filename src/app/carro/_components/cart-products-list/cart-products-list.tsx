@@ -25,6 +25,7 @@ export default function CartProductsList() {
                 id={flower.id}
                 price={flower.price}
                 image={flower.image}
+                url={flower.url}
               />
             ))}
           </ul>
