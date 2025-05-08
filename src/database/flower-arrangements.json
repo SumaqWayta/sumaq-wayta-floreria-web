@@ -2,12 +2,13 @@
   {
     "id": 1,
     "name": "Arreglo Floral",
-    "url": "/flowers/flower-arrangements/arrangement-1.svg",
+    "url": "/flowers/flower-arrangements/arrangement-1.webp",
     "link": "/arreglos-florales/1",
     "content": [
       "Rosas",
       "Girasoles",
       "Gerberas",
+      "Ginger",
       "Claveles",
       "Aleli",
       "Follaje fino"
@@ -15,9 +16,49 @@
     "price": "144.90"
   },
   {
+    "id": 2,
+    "name": "Arreglo Floral",
+    "url": "/flowers/flower-arrangements/arrangement-2.webp",
+    "link": "/arreglos-florales/2",
+    "content": [
+      "Rosas",
+      "Pico de loro",
+      "Girasoles",
+      "Gerberas",
+      "Lirio",
+      "Pata de canguro",
+      "Follaje fino"
+    ],
+    "price": "179.90"
+  },
+  {
+    "id": 3,
+    "name": "Arreglo Floral",
+    "url": "/flowers/flower-arrangements/arrangement-3.webp",
+    "link": "/arreglos-florales/3",
+    "content": [
+      "Rosas",
+      "Girasoles",
+      "Gerberas",
+      "Lirio",
+      "Claveles",
+      "Verónica",
+      "Follaje fino"
+    ],
+    "price": "189.90"
+  },
+  {
+    "id": 4,
+    "name": "Arreglo Floral",
+    "url": "/flowers/flower-arrangements/arrangement-4.webp",
+    "link": "/arreglos-florales/4",
+    "content": ["Rosas", "Lirios", "Astromelias", "Follaje fino"],
+    "price": "229.90"
+  },
+  {
     "id": 5,
     "name": "Arreglo Floral",
-    "url": "/flowers/flower-arrangements/arrangement-5.svg",
+    "url": "/flowers/flower-arrangements/arrangement-5.webp",
     "link": "/arreglos-florales/5",
     "content": [
       "Rosas",
@@ -32,17 +73,33 @@
     "price": "199.90"
   },
   {
+    "id": 6,
+    "name": "Arreglo Floral",
+    "url": "/flowers/flower-arrangements/arrangement-6.svg",
+    "link": "/arreglos-florales/6",
+    "content": ["Rosas", "Lirios", "Astromelias", "Follaje fino"],
+    "price": "229.90"
+  },
+  {
     "id": 7,
     "name": "Arreglo Floral",
-    "url": "/flowers/flower-arrangements/arrangement-7.svg",
+    "url": "/flowers/flower-arrangements/arrangement-7.webp",
     "link": "/arreglos-florales/7",
     "content": ["Girasoles", "Rosas", "Follaje fino"],
     "price": "179.90"
   },
   {
+    "id": 8,
+    "name": "Arreglo Floral",
+    "url": "/flowers/flower-arrangements/arrangement-8.svg",
+    "link": "/arreglos-florales/8",
+    "content": ["Rosas", "Ginger", "Lirios", "Imperico", "Follaje fino"],
+    "price": "209.90"
+  },
+  {
     "id": 9,
     "name": "Arreglo Floral",
-    "url": "/flowers/flower-arrangements/arrangement-9.svg",
+    "url": "/flowers/flower-arrangements/arrangement-9.webp",
     "link": "/arreglos-florales/9",
     "content": [
       "Rosas",
@@ -57,7 +114,7 @@
   {
     "id": 10,
     "name": "Arreglo Floral",
-    "url": "/flowers/flower-arrangements/arrangement-10.svg",
+    "url": "/flowers/flower-arrangements/arrangement-10.webp",
     "link": "/arreglos-florales/10",
     "content": [
       "Rosas",
@@ -73,7 +130,7 @@
   {
     "id": 11,
     "name": "Arreglo Floral",
-    "url": "/flowers/flower-arrangements/arrangement-11.svg",
+    "url": "/flowers/flower-arrangements/arrangement-11.webp",
     "link": "/arreglos-florales/11",
     "content": [
       "Rosas",
@@ -89,7 +146,7 @@
   {
     "id": 12,
     "name": "Arreglo Floral",
-    "url": "/flowers/flower-arrangements/arrangement-12.svg",
+    "url": "/flowers/flower-arrangements/arrangement-12.webp",
     "link": "/arreglos-florales/12",
     "content": ["Rosas", "Lirios", "Follaje fino"],
     "price": "244.90"
@@ -97,72 +154,113 @@
   {
     "id": 13,
     "name": "Arreglo Floral",
-    "url": "/flowers/flower-arrangements/arrangement-13.svg",
+    "url": "/flowers/flower-arrangements/arrangement-13.webp",
     "link": "/arreglos-florales/13",
-    "content": [
-      "Rosas",
-      "Ginger",
-      "Lirios",
-      "Ginger",
-      "Imperico",
-      "Follaje fino"
-    ],
-    "price": "209.90"
+    "content": ["Rosas", "Clavel", "Mini rosas", "Follaje fino"],
+    "price": "179.90"
   },
   {
     "id": 14,
     "name": "Arreglo Floral",
-    "url": "/flowers/flower-arrangements/arrangement-14.svg",
+    "url": "/flowers/flower-arrangements/arrangement-14.webp",
     "link": "/arreglos-florales/14",
     "content": [
       "Rosas",
-      "Pico de loro",
-      "Girasoles",
-      "Gerberas",
-      "Lirio",
-      "Pata de canguro",
+      "Clavel",
+      "Perrito",
+      "Pompo",
+      "Astromelia",
       "Follaje fino"
     ],
-    "price": "179.90"
+    "price": "149.90"
   },
   {
     "id": 15,
     "name": "Arreglo Floral",
-    "url": "/flowers/flower-arrangements/arrangement-15.svg",
+    "url": "/flowers/flower-arrangements/arrangement-15.webp",
     "link": "/arreglos-florales/15",
-    "content": [
-      "Rosas",
-      "Girasoles",
-      "Gerberas",
-      "Lirio",
-      "Claveles",
-      "Verónica",
-      "Follaje fino"
-    ],
-    "price": "184.90"
+    "content": ["Rosas", "Perrito", "Clavel", "Follaje fino"],
+    "price": "129.90"
   },
   {
     "id": 16,
     "name": "Arreglo Floral",
-    "url": "/flowers/flower-arrangements/arrangement-16.svg",
+    "url": "/flowers/flower-arrangements/arrangement-16.webp",
     "link": "/arreglos-florales/16",
-    "content": ["Rosas", "Lirios", "Astromelias", "Follaje fino"],
-    "price": "229.90"
+    "content": ["Rosas", "Mini rosas", "Clavel", "Astromelia", "Follaje fino"],
+    "price": "179.90"
   },
   {
     "id": 17,
     "name": "Arreglo Floral",
-    "url": "/flowers/flower-arrangements/arrangement-17.svg",
+    "url": "/flowers/flower-arrangements/arrangement-17.webp",
     "link": "/arreglos-florales/17",
+    "content": ["Rosas", "Clavel", "Margarita", "Astromelia", "Follaje fino"],
+    "price": "129.90"
+  },
+  {
+    "id": 18,
+    "name": "Arreglo Floral",
+    "url": "/flowers/flower-arrangements/arrangement-18.webp",
+    "link": "/arreglos-florales/18",
+    "content": ["Rosas", "Clavel", "Margarita", "Astromelia", "Follaje fino"],
+    "price": "169.90"
+  },
+  {
+    "id": 19,
+    "name": "Arreglo Floral",
+    "url": "/flowers/flower-arrangements/arrangement-19.webp",
+    "link": "/arreglos-florales/19",
+    "content": ["Rosas", "Clavel", "Astromelia", "Mini rosas", "Follaje fino"],
+    "price": "129.90"
+  },
+  {
+    "id": 20,
+    "name": "Arreglo Floral",
+    "url": "/flowers/flower-arrangements/arrangement-20.webp",
+    "link": "/arreglos-florales/20",
+    "content": ["Rosas", "Tulipan", "Clavel", "Margarita", "Follaje fino"],
+    "price": "219.90"
+  },
+  {
+    "id": 21,
+    "name": "Arreglo Floral",
+    "url": "/flowers/flower-arrangements/arrangement-21.webp",
+    "link": "/arreglos-florales/21",
+    "content": ["Rosas", "Clavel", "Astromelia", "Margarita", "Follaje fino"],
+    "price": "169.90"
+  },
+  {
+    "id": 22,
+    "name": "Arreglo Floral",
+    "url": "/flowers/flower-arrangements/arrangement-22.webp",
+    "link": "/arreglos-florales/22",
+    "content": ["Rosas", "Pompo", "Astromelia", "Montecasino", "Follaje fino"],
+    "price": "89.90"
+  },
+  {
+    "id": 23,
+    "name": "Arreglo Floral",
+    "url": "/flowers/flower-arrangements/arrangement-23.webp",
+    "link": "/arreglos-florales/23",
+    "content": ["Rosas", "Clavel", "Astromelia", "Mini rosas", "Follaje fino"],
+    "price": "179.90"
+  },
+  {
+    "id": 24,
+    "name": "Arreglo Floral",
+    "url": "/flowers/flower-arrangements/arrangement-24.webp",
+    "link": "/arreglos-florales/24",
     "content": [
+      "Orquídea",
       "Rosas",
-      "Lirio",
-      "Girasol",
-      "Herbera",
-      "Pico de loro",
-      "Ginger",
+      "Gerbera",
+      "Mini rosas",
+      "Clavel",
+      "Margarita",
+      "Hortensia",
       "Follaje fino"
     ],
-    "price": "419.90"
+    "price": "189.90"
   }
 ]
