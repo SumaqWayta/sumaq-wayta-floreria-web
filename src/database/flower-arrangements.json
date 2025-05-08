@@ -75,7 +75,7 @@
   {
     "id": 6,
     "name": "Arreglo Floral",
-    "url": "/flowers/flower-arrangements/arrangement-6.svg",
+    "url": "/flowers/flower-arrangements/arrangement-6.webp",
     "link": "/arreglos-florales/6",
     "content": ["Rosas", "Lirios", "Astromelias", "Follaje fino"],
     "price": "229.90"
@@ -91,7 +91,7 @@
   {
     "id": 8,
     "name": "Arreglo Floral",
-    "url": "/flowers/flower-arrangements/arrangement-8.svg",
+    "url": "/flowers/flower-arrangements/arrangement-8.webp",
     "link": "/arreglos-florales/8",
     "content": ["Rosas", "Ginger", "Lirios", "Imperico", "Follaje fino"],
     "price": "209.90"
