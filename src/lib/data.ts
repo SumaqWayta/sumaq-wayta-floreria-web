@@ -8,6 +8,11 @@ export function getAllFuneralFlowers() {
   return Object.values(FUNERAL_FLOWERS).flat();
 }
 
+export function getRandomFuneralFlowersFromAll(count: number = 6) {
+  const allFlowers = getAllFuneralFlowers();
+  return allFlowers.sort(() => Math.random() - 0.5).slice(0, count);
+}
+
 export function getFuneralFlowerByType(id: number) {
   const typeId = id >= 1 && id <= 4 ? id : 1;
   const type: FLOWER_TYPE = TYPES.find((type) => type.id === typeId)!;

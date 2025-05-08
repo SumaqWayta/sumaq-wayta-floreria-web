@@ -2,14 +2,14 @@ import { Badge } from "@/app/arreglos-funebres/_components";
 import {
   getRandomBouquets,
   getRandomFlowerArrangements,
-  getRandomFuneralFlowers,
+  getRandomFuneralFlowersFromAll,
 } from "@/lib/data";
 import Link from "next/link";
 import { SliderFlowers } from "../slider-flowers/slider-flowers";
 import styles from "./sliders-flowers.module.css";
 
 export default function SlidersFlowers() {
-  const funeralFlowers = getRandomFuneralFlowers("lagrimas", 0, 5);
+  const funeralFlowers = getRandomFuneralFlowersFromAll(5);
   const flowerArrangements = getRandomFlowerArrangements(0, 5);
   const bouquets = getRandomBouquets(0, 5);
 
