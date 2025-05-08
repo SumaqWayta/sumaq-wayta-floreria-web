@@ -25,10 +25,7 @@ export default function SlidersFlowers() {
           <span />
           <Link href={"/arreglos-funebres"}>Para Más</Link>
         </div>
-        <SliderFlowers
-          data={funeralFlowers}
-          redirect="/arreglos-funebres/lagrimas"
-        />
+        <SliderFlowers data={funeralFlowers} />
       </div>
       <div className={styles.wrapperFlower}>
         <div>
@@ -40,10 +37,7 @@ export default function SlidersFlowers() {
           <span />
           <Link href={"/arreglos-florales"}>Para Más</Link>
         </div>
-        <SliderFlowers
-          data={flowerArrangements}
-          redirect="/arreglos-florales"
-        />
+        <SliderFlowers data={flowerArrangements} />
       </div>
       <div className={styles.wrapperFlower}>
         <div>
@@ -55,7 +49,7 @@ export default function SlidersFlowers() {
           <span />
           <Link href={"/ramos"}>Para Más</Link>
         </div>
-        <SliderFlowers data={bouquets} redirect="/ramos" />
+        <SliderFlowers data={bouquets} />
       </div>
     </div>
   );

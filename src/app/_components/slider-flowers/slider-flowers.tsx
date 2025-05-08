@@ -10,10 +10,9 @@ import styles from "./slider-flowers.module.css";
 
 interface SliderFlowersProps {
   data: FLOWER[];
-  redirect: string;
 }
 
-export function SliderFlowers({ data, redirect }: SliderFlowersProps) {
+export function SliderFlowers({ data }: SliderFlowersProps) {
   const sliderRef = useRef<HTMLUListElement | null>(null);
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
@@ -85,7 +84,7 @@ export function SliderFlowers({ data, redirect }: SliderFlowersProps) {
             data-active={index === activeIndex}
             data-item
           >
-            <Link href={`${redirect}/${flower.id}`}>
+            <Link href={flower.link}>
               <Image
                 src={flower.url}
                 alt={`Flor ${flower.name}`}
