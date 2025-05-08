@@ -1,7 +1,7 @@
 .wrapper {
   display: grid;
   justify-content: center;
-  width: min(100% - 20px, 240px);
+  width: min(100% - 20px, 250px);
   gap: 1rem;
   transition: all 300ms ease-in-out;
 
@@ -40,8 +40,9 @@
 @media (width >= 40rem) {
   .wrapper {
     & img {
-      width: 240px;
-      height: 240px;
+      object-fit: contain;
+      width: 230px;
+      height: 230px;
     }
   }
 

@@ -32,15 +32,19 @@
 
 .item {
   scroll-snap-align: center;
-  flex: 0 0 50%; /* <-- nuevo: dos ítems visibles */
+  flex: 0 0 50%;
   min-width: 50%;
+  height: 160px;
 }
 
 .flower {
   width: 100%;
-  /* background-color: #f6e4ef; */
-  /* box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.5), 0 1px 10px rgba(0, 0, 0, 0.2); */
+  padding: 1rem;
+  background-color: #f6e4ef;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.5), 0 1px 10px rgba(0, 0, 0, 0.2);
   min-width: min(100%, 250px);
+  height: 100%;
+  object-fit: contain;
   transition: all 300ms ease-in-out;
 }
 
@@ -78,6 +82,7 @@
   .item {
     flex: 0 0 250px;
     min-width: 250px;
+    height: 220px;
   }
 
   .container {

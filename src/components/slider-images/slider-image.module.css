@@ -9,7 +9,6 @@
   overflow: scroll;
   width: 100%;
   max-width: min(80dvw, 200px);
-  min-height: 245px;
   gap: 1rem;
   scrollbar-width: none;
   scroll-snap-type: x mandatory;
@@ -37,7 +36,8 @@
 
 .item img {
   width: 100%;
-  object-fit: cover;
+  height: 180px;
+  object-fit: contain;
 }
 
 .listDots {
