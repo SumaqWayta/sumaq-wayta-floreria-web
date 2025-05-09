@@ -11,7 +11,6 @@ import {
 } from "@/lib/data";
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import styles from "./page.module.css";
 
@@ -103,14 +102,24 @@ export default async function FlowerArrangementPage({
           <AddShopFlower flower={flower} />
           <div className={styles.wrapperPayment}>
             <label className={styles.labelPayment}>Método de pago</label>
-            <Link href="https://www.yape.com.co/">
-              <Image
-                src="/images/yape.webp"
-                alt="yape"
-                width={100}
-                height={100}
-              />
-            </Link>
+            <Image
+              src="/images/yape.webp"
+              alt="yape"
+              width={100}
+              height={100}
+            />
+            <Image
+              src="/images/bcp-logo.webp"
+              alt="yape"
+              width={100}
+              height={100}
+            />
+            <Image
+              src="/images/bbva-logo.webp"
+              alt="yape"
+              width={100}
+              height={100}
+            />
           </div>
         </div>
       </div>

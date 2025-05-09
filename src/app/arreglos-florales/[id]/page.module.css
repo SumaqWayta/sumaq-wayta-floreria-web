@@ -98,8 +98,8 @@
 
 .wrapperPayment {
   display: flex;
-  flex-direction: column;
   position: relative;
+  gap: 0.5rem;
   border: solid var(--main-color);
   height: 100px;
   align-items: center;
