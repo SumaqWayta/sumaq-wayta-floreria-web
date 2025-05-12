@@ -1,5 +1,6 @@
 import { Footer, Navbar } from "@/components";
 import "@/styles/index.css";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Toaster } from "sonner";
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <Analytics />
         <Toaster />
       </body>
     </html>
