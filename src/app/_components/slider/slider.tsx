@@ -40,24 +40,24 @@ export default function Slider() {
     <div className={styles.wrapper}>
       <ul className={styles.slider} ref={sliderRef}>
         <Image
-          src="/slider-main/slider-1.svg"
+          src="/slider-main/slider-1.webp"
           alt="logo sumaq wayta"
-          width={500}
-          height={500}
+          width={1600}
+          height={700}
           className={styles.image}
         />
         <Image
-          src="/slider-main/slider-2.svg"
+          src="/slider-main/slider-2.webp"
           alt="logo sumaq wayta"
-          width={500}
-          height={500}
+          width={1600}
+          height={1000}
           className={styles.image}
         />
         <Image
-          src="/slider-main/slider-3.svg"
+          src="/slider-main/slider-3.webp"
           alt="logo sumaq wayta"
-          width={500}
-          height={500}
+          width={1600}
+          height={700}
           className={styles.image}
         />
       </ul>

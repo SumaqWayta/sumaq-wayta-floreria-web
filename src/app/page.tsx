@@ -70,9 +70,9 @@ export default function Home() {
         </div>
       </div> */}
       <Image
-        src="/images/image-footer.svg"
-        width={500}
-        height={500}
+        src="/images/image-footer.webp"
+        width={1600}
+        height={700}
         alt="Imagen de fondo"
         className={styles.imageFooter}
       />

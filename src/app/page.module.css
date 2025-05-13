@@ -39,6 +39,7 @@
 
 .imageFooter {
   min-height: 130px;
+  max-height: 700px;
   object-fit: cover;
   width: 100%;
 }
