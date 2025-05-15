@@ -1,5 +1,6 @@
 import { Footer, Navbar } from "@/components";
 import "@/styles/index.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Footer />
         <Analytics />
         <Toaster />
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GTAG_ID!} />
       </body>
     </html>
   );
